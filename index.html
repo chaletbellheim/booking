@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f6f1">
+  <meta name="description" content="Bellheim – Kein Bock auf Alltag. Ein Chalet in Bellwald-Ried, zwei Wohnungen: Wiisshoru und Schwarznasa. Für Familien, Freunde, Paare und Alleinreisende – einzeln oder zusammen anfragen.">
+  <title>Bellheim – Kein Bock auf Alltag | Chalet in Bellwald</title>
+  <link rel="icon" type="image/png" href="Fotos/Bellheim-transparent.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#start" aria-label="Chalet Bellheim, Startseite">
+      <span class="wordmark-icon" aria-hidden="true"><img src="Fotos/Bellheim-wappen.png" alt=""></span>
+      <span class="brand-name"><span class="brand-kicker">CHALET</span><strong>BELLHEIM</strong><span class="brand-location">Bellwald · Wallis</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Hauptnavigation">
+      <a href="#wohnungen" data-i18n="navApartments">Wohnungen</a>
+      <a href="#erleben" data-i18n="navExplore">Erleben</a>
+      <a href="#lage" data-i18n="navLocation">Lage</a>
+      <a class="nav-cta" href="#anfrage" data-i18n="navRequest">Anfragen</a>
+    </nav>
+    <label class="language-picker">
+      <span class="sr-only" data-i18n="languageLabel">Sprache wählen</span>
+      <select id="language-select" aria-label="Sprache">
+        <option value="de">DE</option>
+        <option value="en">EN</option>
+        <option value="nl">NL</option>
+      </select>
+    </label>
+  </header>
+
+  <main>
+    <section class="hero" id="start">
+      <img class="hero-image" src="Fotos/Gemini_Generated_Image_kupgmwkupgmwkupg.jpg" alt="Walliser Schwarznasenschafe auf einer Blumenwiese mit Blick über Bellwald und die Berge" width="1368" height="768">
+      <div class="hero-shade"></div>
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="heroEyebrow">BELLWALD · WALLIS · SCHWEIZ</p>
+        <h1 data-i18n="heroTitle">Kein Bock<br>auf Alltag</h1>
+        <p class="hero-intro" data-i18n="heroIntro">Ein Chalet. Zwei Wohnungen. Für Familien und Freunde, zu zweit oder ganz für dich. Willkommen im Bellheim.</p>
+        <div class="hero-actions">
+          <a class="button button-light" href="#wohnungen"><span data-i18n="heroButton">Das Chalet entdecken</span><span aria-hidden="true">↘</span></a>
+          <a class="button button-outline" href="#anfrage"><span data-i18n="heroBook">Buchen</span><span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <p class="hero-caption" data-i18n="heroCaption">CHALET BELLHEIM · BELLWALD-RIED</p>
+    </section>
+
+    <section class="intro section-wrap">
+      <p class="eyebrow eyebrow-dark" data-i18n="introEyebrow">EIN CHALET · ZWEI WOHNUNGEN · EUER BELLHEIM</p>
+      <div class="intro-grid">
+        <h2 data-i18n="introTitle">Zusammen sein.<br>Raum für dich.</h2>
+        <div class="intro-text">
+          <p data-i18n="introBody">Im schönen Weiler Ried bei Bellwald liegt euer Bellheim: ein Chalet, das verbindet und Freiraum lässt. Mit Familie und Freunden das ganze Haus geniessen, als Paar ankommen oder alleine durchatmen. Wiisshoru im Obergeschoss, Schwarznasa im Erdgeschoss – beide Wohnungen sind einzeln oder zusammen mietbar.</p>
+          <a class="text-link" href="#wohnungen"><span data-i18n="introLink">Die Wohnungen vergleichen</span><span aria-hidden="true">↘</span></a>
+        </div>
+      </div>
+      <div class="chalet-values">
+          <div><svg class="value-icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><circle cx="16" cy="9" r="4"/><path d="M9 27v-4a7 7 0 0 1 14 0v4M6 8a3.5 3.5 0 0 0 0 7M26 8a3.5 3.5 0 0 1 0 7M7 19a5 5 0 0 0-5 5v2M25 19a5 5 0 0 1 5 5v2"/></svg><h3 data-i18n="togetherTitle">Mit euren Lieblingsmenschen</h3><p data-i18n="togetherBody">Das ganze Chalet für Familie und Freunde. Bis zu 11 Gäste, zwei Wohnungen und Zeit füreinander.</p></div>
+          <div><svg class="value-icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M16 27 5 16C-3 7 9 0 16 9 23 0 35 7 27 16Z"/></svg><h3 data-i18n="ownSpaceTitle">Zu zweit. Oder nur für dich.</h3><p data-i18n="ownSpaceBody">Eine Wohnung als eigener Rückzugsort. Für Paarzeit, freie Gedanken und Bergtage im eigenen Tempo.</p></div>
+          <div><svg class="value-icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M8 15 2 13l1 7 6-1M24 15l6-2-1 7-6-1" fill="currentColor"/><path d="M10 14c-4 0-5-5-2-7-1-4 4-6 7-3 3-3 8-1 8 2 5 0 6 6 2 8" /><path d="M10 14q6-3 12 0l-1 9q-5 9-10 0Z" fill="currentColor"/><path d="m14 24 2 1 2-1" stroke="var(--paper)"/></svg><h3 data-i18n="rootsTitle">Ein Stück Wallis</h3><p data-i18n="rootsBody">Wiisshoru trifft Schwarznasa: inspiriert vom Weisshorn und dem Walliser Schwarznasenschaf. Bodenständig und behaglich.</p></div>
+      </div>
+    </section>
+
+    <section class="apartments" id="wohnungen">
+      <div class="section-wrap">
+        <div class="section-heading">
+          <div><p class="eyebrow eyebrow-dark" data-i18n="apartmentsEyebrow">ZWEI CHARAKTERE · EIN ZUHAUSE</p><h2 data-i18n="apartmentsTitle">Wiisshoru & Schwarznasa.<br>Einzeln. Oder zusammen.</h2></div>
+          <p data-i18n="apartmentsNote">Ein ganzes Chalet für gemeinsame Ferien oder eine Wohnung ganz für euch: Ihr entscheidet, wie viel Bellheim zu eurer Auszeit passt.</p>
+        </div>
+        <div class="apartment-grid">
+          <article class="apartment-card belalp-card">
+            <div class="photo-gallery apartment-photo photo-belalp" data-gallery="belalp" data-alt="Innenansichten der Ferienwohnung Wiisshoru" data-cover-alt="Holzschild Wiisshoru mit schlichter Bergkontur">
+              <img class="gallery-image gallery-cover" src="Fotos/wiisshoru-holzschild.svg" alt="Holzschild Wiisshoru mit schlichter Bergkontur" loading="lazy">
+              <button class="gallery-arrow gallery-prev" type="button" data-gallery-prev data-i18n-aria="galleryPrevious" aria-label="Vorheriges Bild"><span aria-hidden="true">‹</span></button>
+              <span class="gallery-count" aria-live="polite">1 / 18</span>
+              <button class="gallery-arrow gallery-next" type="button" data-gallery-next data-i18n-aria="galleryNext" aria-label="Nächstes Bild"><span aria-hidden="true">›</span></button>
+            </div>
+            <div class="apartment-body">
+              <div class="apartment-title-row"><div><p class="eyebrow eyebrow-dark" data-i18n="upperApartment">OBERGESCHOSS</p><h3>Wiisshoru</h3></div><span class="capacity"><strong>6–7</strong><small data-i18n="guests">Gäste</small></span></div>
+              <p class="apartment-description" data-i18n="belalpDescription">Benannt nach dem Weisshorn: Licht, Holz und ein weiter Blick. Die Wohnung im Obergeschoss bietet mit ihrer offenen Galerie Platz für gemeinsame Bergtage.</p>
+              <ul class="feature-list"><li data-i18n="belalpBeds">2 Schlafzimmer + offene Galerie</li><li data-i18n="sharedFeatures">Küche · Dusche/WC · WLAN · Waschmaschine</li><li data-i18n="belalpOutdoor">Rundum-Balkon mit Weisshornblick</li></ul>
+              <a class="text-link apartment-request" href="#anfrage" data-apartment="Wiisshoru"><span data-i18n="upperRequest">Wiisshoru anfragen</span><span aria-hidden="true">↗</span></a>
+              <div class="rate-table">
+                <div class="rate-row rate-heading"><span data-i18n="seasonLabel">Saison</span><span data-i18n="perNight">pro Nacht</span><span data-i18n="perWeek">pro Woche</span></div>
+                <div class="rate-row"><span data-i18n="baseSeason">Basiszeit</span><strong>CHF 200</strong><strong>CHF 1’350</strong></div>
+                <div class="rate-row"><span data-i18n="summerSeason">Sommer</span><strong>CHF 220</strong><strong>CHF 1’450</strong></div>
+                <div class="rate-row"><span data-i18n="autumnSeason">Herbst</span><strong>CHF 250</strong><strong>CHF 1’650</strong></div>
+                <div class="rate-row"><span data-i18n="winterSeason">Winter inkl. Feiertage & Sportferien</span><strong>CHF 280</strong><strong>CHF 1’850</strong></div>
+              </div>
+            </div>
+          </article>
+          <article class="apartment-card bailey-card">
+            <div class="photo-gallery apartment-photo photo-bailey" data-gallery="bailey" data-alt="Innenansichten der Ferienwohnung Schwarznasa" data-cover-alt="Holzschild Schwarznasa mit schwarzem Schafskopf und weisser Wolle">
+              <img class="gallery-image gallery-cover" src="Fotos/schwarznasa-holzschild.svg" alt="Holzschild Schwarznasa mit schwarzem Schafskopf und weisser Wolle" loading="lazy">
+              <button class="gallery-arrow gallery-prev" type="button" data-gallery-prev data-i18n-aria="galleryPrevious" aria-label="Vorheriges Bild"><span aria-hidden="true">‹</span></button>
+              <span class="gallery-count" aria-live="polite">1 / 8</span>
+              <button class="gallery-arrow gallery-next" type="button" data-gallery-next data-i18n-aria="galleryNext" aria-label="Nächstes Bild"><span aria-hidden="true">›</span></button>
+            </div>
+            <div class="apartment-body">
+              <div class="apartment-title-row"><div><p class="eyebrow eyebrow-dark" data-i18n="groundFloor">ERDGESCHOSS</p><h3>Schwarznasa</h3></div><span class="capacity"><strong>4</strong><small data-i18n="guests">Gäste</small></span></div>
+              <p class="apartment-description" data-i18n="baileyDescription">Ein Name wie das Walliser Schwarznasenschaf: eigenständig und voller Charme. Die behagliche Wohnung im Erdgeschoss mit Gartensitzplatz – zum Ankommen und Durchatmen.</p>
+              <ul class="feature-list"><li data-i18n="baileyBeds">2 Schlafzimmer: Doppelbett & Etagenbett</li><li data-i18n="sharedFeatures">Küche · Dusche/WC · WLAN · Waschmaschine</li><li data-i18n="baileyOutdoor">Gartensitzplatz mit Weisshornblick</li></ul>
+              <a class="text-link apartment-request" href="#anfrage" data-apartment="Schwarznasa"><span data-i18n="lowerRequest">Schwarznasa anfragen</span><span aria-hidden="true">↗</span></a>
+              <div class="rate-table">
+                <div class="rate-row rate-heading"><span data-i18n="seasonLabel">Saison</span><span data-i18n="perNight">pro Nacht</span><span data-i18n="perWeek">pro Woche</span></div>
+                <div class="rate-row"><span data-i18n="baseSeason">Basiszeit</span><strong>CHF 180</strong><strong>CHF 1’150</strong></div>
+                <div class="rate-row"><span data-i18n="summerSeason">Sommer</span><strong>CHF 190</strong><strong>CHF 1’250</strong></div>
+                <div class="rate-row"><span data-i18n="autumnSeason">Herbst</span><strong>CHF 210</strong><strong>CHF 1’350</strong></div>
+                <div class="rate-row"><span data-i18n="winterSeason">Winter inkl. Feiertage & Sportferien</span><strong>CHF 240</strong><strong>CHF 1’550</strong></div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="combined-rate">
+          <div class="photo-gallery combined-gallery" data-gallery="bellevue" data-alt="Aussen- und Innenansichten des Chalet Bellheim" data-cover-alt="Holzschild Chalet Bellheim mit Berg, Tanne und Schwarznasenschaf">
+            <img class="gallery-image gallery-cover" src="Fotos/bellheim-holzschild.svg" alt="Holzschild Chalet Bellheim mit Berg, Tanne und Schwarznasenschaf" loading="lazy">
+            <button class="gallery-arrow gallery-prev" type="button" data-gallery-prev data-i18n-aria="galleryPrevious" aria-label="Vorheriges Bild"><span aria-hidden="true">‹</span></button>
+            <span class="gallery-count" aria-live="polite">1 / 11</span>
+            <button class="gallery-arrow gallery-next" type="button" data-gallery-next data-i18n-aria="galleryNext" aria-label="Nächstes Bild"><span aria-hidden="true">›</span></button>
+          </div>
+          <div class="combined-details">
+            <div><p class="eyebrow eyebrow-dark" data-i18n="combinedTitle">DAS GANZE CHALET</p><h3 class="combined-name">Bellheim</h3><p class="combined-subtitle" data-i18n="combinedSubtitle">Wiisshoru + Schwarznasa · bis zu 11 Gäste</p><a class="text-link combined-request" href="#anfrage" data-apartment="Chalet Bellheim"><span data-i18n="wholeChaletLink">Das ganze Chalet anfragen</span><span aria-hidden="true">↗</span></a></div>
+            <div class="rate-table combined-rate-table">
+              <div class="rate-row rate-heading"><span data-i18n="seasonLabel">Saison</span><span data-i18n="perNight">pro Nacht</span><span data-i18n="perWeek">pro Woche</span></div>
+              <div class="rate-row"><span data-i18n="baseSeason">Basiszeit</span><strong>CHF 380</strong><strong>CHF 2’500</strong></div>
+              <div class="rate-row"><span data-i18n="summerSeason">Sommer</span><strong>CHF 410</strong><strong>CHF 2’700</strong></div>
+              <div class="rate-row"><span data-i18n="autumnSeason">Herbst</span><strong>CHF 460</strong><strong>CHF 3’000</strong></div>
+              <div class="rate-row"><span data-i18n="winterSeason">Winter inkl. Feiertage & Sportferien</span><strong>CHF 520</strong><strong>CHF 3’400</strong></div>
+            </div>
+          </div>
+          <small class="combined-note" data-i18n="combinedNote">Kein pauschaler Saisonaufschlag. Wintersaisonpreise gelten auch über Weihnachten, Neujahr und Sportferien.</small>
+        </div>
+        <p class="price-note" data-i18n="priceNote">Mindestaufenthalt 3 Nächte. Strom und Wasser inklusive. Endreinigung pro Buchung: Wiisshoru CHF 200, Schwarznasa CHF 150, beide Wohnungen CHF 350. Bettwäsche auf Wunsch. Kurtaxe gemäss Bellwalder Regelung.</p>
+      </div>
+    </section>
+
+    <section class="view-band">
+      <img src="Fotos/Gemini_Generated_Image_mstclqmstclqmstc.jpg" alt="Balkontisch mit zwei Gläsern Weisswein, Käse und Walliser Fleischplättli vor der Aussicht ins Tal" loading="lazy">
+      <div class="view-band-copy"><p class="eyebrow" data-i18n="viewEyebrow">DRAUSSEN DIE BERGE · DRINNEN DAS ZUHAUSE</p><h2 data-i18n="viewTitle">Der schönste<br>Platz am Tisch?</h2><p data-i18n="viewBody">Vielleicht direkt am Fenster. Vielleicht draussen auf der Terrasse. Der Blick ins Tal und hinüber zum Weisshorn ist immer dabei.</p></div>
+    </section>
+
+    <section class="amenities section-wrap">
+      <div class="amenities-heading"><p class="eyebrow eyebrow-dark" data-i18n="amenitiesEyebrow">GUT AUSGESTATTET FÜR ECHTE BERGTAGE</p><h2 data-i18n="amenitiesTitle">Alles für eure Auszeit.</h2></div>
+      <div class="amenities-list">
+        <div><span class="amenity-number">01</span><p data-i18n="amenity1">Voll ausgestattete Küche</p></div>
+        <div><span class="amenity-number">02</span><p data-i18n="amenity2">Bad mit Dusche & WC</p></div>
+        <div><span class="amenity-number">03</span><p data-i18n="amenity3">WLAN & Waschmaschine</p></div>
+        <div><span class="amenity-number">04</span><p data-i18n="amenity4">Kamin mit Kochplatte (Wiisshoru)</p></div>
+        <div><span class="amenity-number">05</span><p data-i18n="amenity5">Haustiere willkommen</p></div>
+        <div><span class="amenity-number">06</span><p data-i18n="amenity6">Garage & zusätzlicher Aussenplatz</p></div>
+      </div>
+    </section>
+
+    <section class="experiences" id="erleben">
+      <div class="section-wrap">
+        <p class="eyebrow" data-i18n="experienceEyebrow">ZU JEDER JAHRESZEIT</p>
+        <div class="experience-heading"><h2 data-i18n="experienceTitle">Zauberhaftes Bellwald</h2></div>
+        <div class="experience-grid">
+          <article><span class="season-tag" data-i18n="summerTag">SOMMER</span><h3 data-i18n="summerTitle">Wege, Trails<br>& Weitblick.</h3><div class="photo-gallery season-gallery" data-gallery="bellwaldSummer" data-alt="Sommeransichten aus Bellwald"><img class="gallery-image" src="Fotos/bellwald-sommer.svg" alt="Sommeransichten aus Bellwald" loading="lazy"><button class="gallery-arrow gallery-prev" type="button" data-gallery-prev data-i18n-aria="galleryPrevious" aria-label="Vorheriges Bild"><span aria-hidden="true">‹</span></button><span class="gallery-count" aria-live="polite">1 / 4</span><button class="gallery-arrow gallery-next" type="button" data-gallery-next data-i18n-aria="galleryNext" aria-label="Nächstes Bild"><span aria-hidden="true">›</span></button></div><p data-i18n="summerBody">Wanderwege direkt vor der Tür, der Bikepark Bellwald, Spielplätze und Ausflüge in die Aletsch Arena. Das Goms lockt mit Langlauf, das Wallis mit endlosen Gipfeln.</p>
+            <div class="season-links">
+              <a href="https://www.bellwald.ch/sommer" target="_blank" rel="noreferrer" class="text-link text-link-light"><span data-i18n="summerLink">Sommer in Bellwald</span><span aria-hidden="true">↗</span></a>
+              <a href="https://infosnow.ch/~apgmontagne/?id=184&amp;tab=map-su" target="_blank" rel="noreferrer" class="text-link text-link-light"><span data-i18n="summerMapLink">Interaktive Sommerkarte</span><span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article><span class="season-tag" data-i18n="winterTag">WINTER</span><h3 data-i18n="winterTitle">Schnee vor der Tür.<br>Ruhe danach.</h3><div class="photo-gallery season-gallery" data-gallery="bellwaldWinter" data-alt="Winteransicht der Chalets in Bellwald"><img class="gallery-image" src="Fotos/bellwald-winter.svg" alt="Winteransicht der Chalets in Bellwald" loading="lazy"><button class="gallery-arrow gallery-prev" type="button" data-gallery-prev data-i18n-aria="galleryPrevious" aria-label="Vorheriges Bild"><span aria-hidden="true">‹</span></button><span class="gallery-count" aria-live="polite">1 / 3</span><button class="gallery-arrow gallery-next" type="button" data-gallery-next data-i18n-aria="galleryNext" aria-label="Nächstes Bild"><span aria-hidden="true">›</span></button></div><p data-i18n="winterBody">Familienfreundliche Pisten, Skischule und Winterwanderwege in Bellwald. Langlaufloipen im Goms und weitere Walliser Skigebiete sind schöne Ziele für einen Tagesausflug.</p>
+            <div class="season-links">
+              <a href="https://www.bellwald.ch/winter" target="_blank" rel="noreferrer" class="text-link text-link-light"><span data-i18n="winterLink">Winter in Bellwald</span><span aria-hidden="true">↗</span></a>
+              <a href="https://infosnow.ch/~apgmontagne/?id=184&amp;tab=map-wi" target="_blank" rel="noreferrer" class="text-link text-link-light"><span data-i18n="winterMapLink">Interaktiver Pistenplan</span><span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+        <div class="daytrips"><p class="eyebrow" data-i18n="daytripsEyebrow">GUTE ZIELE FÜR EINEN TAGESAUSFLUG · FAHRZEITEN AB RIED</p><div><span><strong>Aletsch Arena</strong><small data-i18n="aletschTime">Fiesch ca. 15 Min. mit dem Auto, weiter mit der Bergbahn</small></span><span><strong>Langlauf im Goms</strong><small data-i18n="gomsTime">je nach Loipe ca. 25–40 Min. mit dem Auto</small></span><span><strong>Saas-Fee</strong><small data-i18n="saasTime">ca. 1,5–2 Std. mit dem Auto, je nach Route und Verkehr</small></span><span><strong>Zermatt</strong><small data-i18n="zermattTime">Täsch ca. 1,5–2 Std. mit dem Auto, weiter mit dem Zug</small></span></div><small class="trip-caveat" data-i18n="tripCaveat">Ungefähre Richtwerte; Wetter, Verkehr, Fahrplan und saisonale Strassenverhältnisse können die Reisezeit verändern.</small></div>
+      </div>
+    </section>
+
+    <section class="location section-wrap" id="lage">
+      <div class="location-copy"><p class="eyebrow eyebrow-dark" data-i18n="locationEyebrow">BELLWALD-RIED</p><h2 data-i18n="locationTitle">Ruhig gelegen.<br>Gut verbunden.</h2><p data-i18n="locationBody">Euer Rückzugsort im Weiler Ried. Bellwald und die Talstation sind wenige Autominuten entfernt. Mit dem ÖV: via Fiesch und Bergbahn nach Bellwald; die Weiterreise nach Ried bitte vorab planen.</p><a class="text-link" href="https://www.sbb.ch/de" target="_blank" rel="noreferrer"><span data-i18n="timetableLink">Verbindungen bei der SBB planen</span><span aria-hidden="true">↗</span></a></div>
+      <div class="location-image"><img src="Fotos/Bellevue/90fcaf7f060d2c3366dbe0bddf9438d8.jpg" alt="Chalet Bellheim zwischen Bäumen und Wiesen in Bellwald-Ried" loading="lazy"><span data-i18n="locationCaption">EUER BELLHEIM IN RIED</span></div>
+    </section>
+
+    <section class="guest-card-band">
+      <img class="guest-card-mark" src="Fotos/gaestekarte.svg" alt="" aria-hidden="true" loading="lazy">
+      <div><p class="eyebrow" data-i18n="guestCardEyebrow">MEHR WALLIS MIT DER GÄSTEKARTE</p><h2 data-i18n="guestCardTitle">Kleine Karte.<br>Mehr Möglichkeiten.</h2></div>
+      <div class="guest-card-copy"><p data-i18n="guestCardBody">Mit der Bellwald Gästekarte fahren Gäste im Sommer kostenlos mit den Bellwalder Sportbahnen (Bikepark und Funsportgeräte ausgenommen). Im Winter gehören unter anderem Skibus und Kinderbetreuung zu den Vorteilen. Die Leistungen sind saisonabhängig; der Gastgeber stellt die Karte vor der Anreise bereit.</p><a href="https://www.bellwald.ch/planen-buchen/service-vorteile/gaestekarte-kurtaxe#c12560" target="_blank" rel="noreferrer" class="text-link text-link-light"><span data-i18n="guestCardLink">Aktuelle Gästekarten-Vorteile ansehen</span><span aria-hidden="true">↗</span></a></div>
+    </section>
+
+    <section class="booking section-wrap" id="anfrage">
+      <div class="booking-copy">
+        <div class="booking-heading"><div><p class="eyebrow eyebrow-dark" data-i18n="bookingEyebrow">DEINE AUSZEIT BEGINNT HIER</p><h2 data-i18n="bookingTitle">Wann soll’s<br>in die Berge gehen?</h2></div><img class="booking-emblem" src="Fotos/Bellheim-transparent.png" alt="" aria-hidden="true" loading="lazy"></div>
+        <p data-i18n="bookingBody">Das ganze Bellheim oder eine der beiden Wohnungen? Wähle eure Auszeit und Reisedaten. Wir prüfen die Verfügbarkeit und melden uns persönlich zurück.</p>
+        <p class="booking-contact"><span data-i18n="emailContactLabel">Schreib uns gerne</span><a href="mailto:chalet.bellheim@gmail.com">chalet.bellheim@gmail.com</a></p>
+        <p class="booking-note"><span class="status-dot"></span><span data-i18n="calendarStatus">Der Live-Belegungskalender wird noch eingerichtet. Verfügbarkeit aktuell auf Anfrage.</span></p>
+      </div>
+      <form class="booking-form" id="booking-form">
+        <label><span data-i18n="apartmentLabel">Chalet oder Wohnung</span><select name="apartment" required><option value="Chalet Bellheim" data-i18n="bothApartments">Bellheim · das ganze Chalet</option><option value="Wiisshoru" data-i18n="upperOption">Wiisshoru · Obergeschoss</option><option value="Schwarznasa" data-i18n="lowerOption">Schwarznasa · Erdgeschoss</option></select></label>
+        <label><span data-i18n="guestNameLabel">Dein Name</span><input type="text" name="guestName" autocomplete="name" required></label>
+        <label><span data-i18n="guestEmailLabel">Deine E-Mail-Adresse</span><input type="email" name="guestEmail" autocomplete="email" required></label>
+        <div class="date-row"><label><span data-i18n="arrivalLabel">Anreise</span><input type="date" name="arrival" required></label><label><span data-i18n="departureLabel">Abreise</span><input type="date" name="departure" required></label></div>
+        <div class="guest-grid">
+          <label><span data-i18n="adultCountLabel">Erwachsene</span><input type="number" name="adults" min="0" max="11" value="2" required></label>
+          <label><span data-i18n="childCountLabel">Kinder</span><input type="number" name="children" min="0" max="11" value="0" required></label>
+          <label><span data-i18n="dogCountLabel">Hunde</span><input type="number" name="dogs" min="0" value="0" required></label>
+        </div>
+        <button class="button button-dark" type="submit"><span data-i18n="bookingButton">E-Mail-Anfrage vorbereiten</span><span aria-hidden="true">↗</span></button>
+        <p class="form-small" data-i18n="formNote">Dein E-Mail-Programm öffnet sich mit den Angaben; gesendet wird erst nach deiner Bestätigung.</p>
+        <div class="form-result" id="form-result" role="status" aria-live="polite" hidden></div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="wordmark footer-wordmark" href="#start"><span class="wordmark-icon" aria-hidden="true"><img src="Fotos/Bellheim-wappen.png" alt=""></span><span class="brand-name"><span class="brand-kicker">CHALET</span><strong>BELLHEIM</strong></span></a>
+    <p data-i18n="footerLine">Ein Chalet. Zwei Wohnungen. Kein Bock auf Alltag.</p>
+    <a href="#start" class="back-top"><span data-i18n="backTop">Zurück nach oben</span> ↑</a>
+    <small class="footer-note">© <span id="year"></span> Chalet Bellheim</small>
+  </footer>
+</body>
+</html>

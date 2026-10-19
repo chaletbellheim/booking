@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Chalet Bellheim</title>
+  <desc id="desc">Rustikales Holzschild Chalet Bellheim mit einem Wappen aus Berg, Tanne und Schwarznasenschaf.</desc>
+  <defs>
+    <linearGradient id="wall" x2="0" y2="1"><stop stop-color="#eeeae2" /><stop offset="1" stop-color="#d8d2c7" /></linearGradient>
+    <linearGradient id="wood" x2="0" y2="1"><stop stop-color="#d5b689" /><stop offset="1" stop-color="#a98053" /></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="19" stdDeviation="18" flood-color="#352c20" flood-opacity=".23" /></filter>
+    <clipPath id="plank"><rect x="155" y="170" width="890" height="460" rx="13" /></clipPath>
+  <filter xmlns="http://www.w3.org/2000/svg" id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".008 .24" numOctaves="3" seed="12" /><feColorMatrix type="saturate" values="0" /><feBlend in="SourceGraphic" mode="soft-light" /></filter></defs>
+  <path fill="url(#wall)" d="M0 0h1200v800H0z" />
+  <g filter="url(#shadow)">
+    <rect x="155" y="170" width="890" height="460" rx="13" fill="url(#wood)" />
+    <g clip-path="url(#plank)">
+      <g xmlns="http://www.w3.org/2000/svg"><rect x="155" y="170" width="890" height="460" fill="url(#wood)" filter="url(#grain)" opacity=".38" /><g fill="none" stroke="#825b33" stroke-width="1.5" opacity=".18"><path d="M150 198c240 15 385-19 900 4M150 219c370 19 555-19 900 2M150 245c190-16 460 14 900-5M150 275c360-21 560 17 900-8M150 301c220 16 510-12 900 2M150 340c330-17 590 19 900-3M150 378c220 16 570-19 900 5M150 423c290-13 590 17 900-6M150 471c250 14 530-15 900 3M150 518c360-20 540 17 900 0M150 566c240 19 560-16 900 2M150 604c380-15 570 18 900-4" /><path d="M150 535c150 0 155-27 209-27s58 30 127 29 330-5 564 4M150 549c160 0 172-26 209-26s51 24 127 25 330 3 564 5" /><ellipse cx="359" cy="533" rx="25" ry="7" /><ellipse cx="359" cy="533" rx="10" ry="3" /></g></g>
+      <rect x="155" y="170" width="890" height="460" fill="#ead7b7" opacity=".2" />
+      <path d="M166 182h868" stroke="#fff2d9" stroke-width="3" opacity=".5" />
+      <path d="M165 619h870" stroke="#67472c" stroke-width="3" opacity=".35" />
+    </g>
+    <rect x="171" y="186" width="858" height="428" rx="5" fill="none" stroke="#61472e" stroke-opacity=".35" />
+  </g>
+  <g fill="#514333">
+    <circle cx="190" cy="205" r="5" /><circle cx="1010" cy="205" r="5" />
+    <circle cx="190" cy="595" r="5" /><circle cx="1010" cy="595" r="5" />
+    
+  </g>
+  <g transform="translate(505 211)" stroke="#343c2d" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M95 0Q46 20 3 24v77q0 60 92 87 92-27 92-87V24Q144 20 95 0Z" fill="none" stroke-width="6" />
+    <path d="m19 102 33-40 14 11 29-45 31 44m-31-44-3 31 13 16" fill="none" stroke-width="4" />
+    <path d="m142 62-21 39h11l-20 26h24v21h12v-21h21l-19-26h10Z" fill="#343c2d" stroke-width="2" />
+    <path d="M40 136c-12-6-8-22 4-25-2-13 14-20 24-14 6-13 25-13 32-1 13-4 24 6 21 17 13 7 9 22-2 26-2 16-17 21-29 15-12 11-31 8-35-4-7 0-13-5-15-14Z" fill="#e8dcc0" stroke-width="3" />
+    <path d="m94 112-13 3 6 12 9-4m20-11 13 3-6 12-9-4" fill="#302f2a" stroke-width="2" />
+    <path d="M92 116q0 26 13 29 13-3 13-29Z" fill="#302f2a" stroke-width="2" />
+    <path d="M89 116c-6-4-4-11 2-12 0-7 9-9 13-5 6-5 13-1 13 4 8 1 9 10 3 13-6 3-10-2-15 0-5-3-10 3-16 0Z" fill="#e8dcc0" stroke-width="2" />
+  </g>
+  <text x="600" y="447" fill="#342b21" font-family="Arial, sans-serif" font-size="17" text-anchor="middle" letter-spacing="7">CHALET</text>
+  <text x="600" y="525" fill="#342b21" font-family="Georgia, 'Times New Roman', serif" font-size="87" text-anchor="middle" letter-spacing="3">Bellheim</text>
+  
+</svg>
