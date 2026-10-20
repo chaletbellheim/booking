@@ -10,7 +10,7 @@ const translations = {
     experienceEyebrow: "ZU JEDER JAHRESZEIT", experienceTitle: "Ein Tal voller<br>guter Gründe.", experienceIntro: "Bellwald ist klein genug zum Durchatmen und gross genug für jeden Tag ein neues Draußen.", summerTag: "SOMMER", summerTitle: "Wege, Trails<br>& Weitblick.", summerBody: "Wanderwege direkt vor der Tür, der Bikepark Bellwald, Spielplätze und Ausflüge in die Aletsch Arena. Das Goms lockt mit Langlauf, das Wallis mit endlosen Gipfeln.", summerLink: "Sommer in Bellwald", winterTag: "WINTER", winterTitle: "Schnee vor der Tür.<br>Ruhe danach.", winterBody: "Familienfreundliche Pisten, Skischule und Winterwanderwege in Bellwald. Langlaufloipen im Goms und weitere Walliser Skigebiete sind schöne Ziele für einen Tagesausflug.", winterLink: "Winter in Bellwald", daytripsEyebrow: "GUTE ZIELE FÜR EINEN TAGESAUSFLUG", aletschTime: "Fiesch ca. 15 Min. mit dem Auto, weiter mit der Bergbahn", gomsTime: "je nach Loipe ca. 25–40 Min. mit dem Auto", distantTime: "als Tagesausflug; Fahrzeiten je nach Verkehr und Verbindung",
     locationEyebrow: "OBEN ANKOMMEN. GUT VERBUNDEN SEIN.", locationTitle: "Ein Weiler<br>für sich. Ein Tal<br>voller Wege.", locationBody: "Das Chalet liegt im schönen Weiler Ried oberhalb von Bellwald. Mit dem Auto erreichst du Bellwald und die Talstation in wenigen Minuten. Mit dem Zug fährst du bis Fiesch; von dort geht es mit der Bergbahn hinauf nach Bellwald. Die letzte Strecke nach Ried bitte vorab mit dem aktuellen Fahrplan planen.", timetableLink: "Verbindungen bei der SBB planen", locationCaption: "DER BLICK VON RIED INS TAL",
     guestCardEyebrow: "MEHR WALLIS MIT DER GÄSTEKARTE", guestCardTitle: "Kleine Karte.<br>Mehr Möglichkeiten.", guestCardBody: "Als Übernachtungsgast erhältst du die Bellwald Gästekarte. Sie eröffnet saisonabhängige Vergünstigungen und Angebote in Bellwald und der Region. Welche Leistungen gerade gelten, hängt von Reisezeit und Angebot ab.", guestCardLink: "Aktuelle Gästekarten-Vorteile ansehen",
-    bookingEyebrow: "DEINE AUSZEIT BEGINNT HIER", bookingTitle: "Wann soll’s<br>in die Berge gehen?", bookingBody: "Wähle Wohnung und Reisedaten. Wir prüfen die Verfügbarkeit und melden uns persönlich zurück.", calendarStatus: "Der Live-Belegungskalender wird noch eingerichtet. Verfügbarkeit aktuell auf Anfrage.", apartmentLabel: "Wohnung", arrivalLabel: "Anreise", departureLabel: "Abreise", guestCountLabel: "Gäste", bookingButton: "Anfrage vorbereiten", formNote: "Unverbindliche Anfrage · Mindestaufenthalt 3 Nächte", footerLine: "Zwei Wohnungen. Ein Zuhause in den Bergen.", backTop: "Zurück nach oben",
+    bookingEyebrow: "DEINE AUSZEIT BEGINNT HIER", bookingTitle: "Wann soll’s<br>in die Berge gehen?", bookingBody: "Wähle Wohnung und Reisedaten. Wir prüfen die Verfügbarkeit und melden uns persönlich zurück.", calendarStatus: "Der Belegungsplan zeigt veröffentlichte Buchungssperren. Verfügbarkeit bestätigen wir persönlich nach Eingang eurer Anfrage.", apartmentLabel: "Wohnung", arrivalLabel: "Anreise", departureLabel: "Abreise", guestCountLabel: "Gäste", bookingButton: "Anfrage vorbereiten", formNote: "Unverbindliche Anfrage · Mindestaufenthalt 3 Nächte", footerLine: "Zwei Wohnungen. Ein Zuhause in den Bergen.", backTop: "Zurück nach oben",
     errorDates: "Bitte wähle gültige An- und Abreisedaten.", errorMinimum: "Der Mindestaufenthalt beträgt 3 Nächte.", errorCapacity: "Bitte prüfe die maximale Belegung: Wiisshoru 7, Schwarznasa 4, beide Wohnungen 11 Gäste.", requestReady: "Deine Anfrage ist vorbereitet. Für die verbindliche Verfügbarkeit braucht es noch eine Kontaktadresse oder einen verbundenen Buchungskalender."
   },
   en: {
@@ -24,7 +24,7 @@ const translations = {
     experienceEyebrow: "A PLACE FOR EVERY SEASON", experienceTitle: "A valley full<br>of good reasons.", experienceIntro: "Bellwald is small enough to slow down and full of new places to discover each day.", summerTag: "SUMMER", summerTitle: "Trails, paths<br>& far horizons.", summerBody: "Walking trails begin nearby. Explore the Bellwald bike park, playgrounds and the Aletsch Arena. The Goms is made for cross-country skiing; the Valais for mountain days.", summerLink: "Summer in Bellwald", winterTag: "WINTER", winterTitle: "Snow outside.<br>Peace within.", winterBody: "Family-friendly slopes, a ski school and winter walks in Bellwald. The Goms cross-country trails and other Valais ski areas make lovely day trips.", winterLink: "Winter in Bellwald", daytripsEyebrow: "IDEAS FOR A DAY OUT", aletschTime: "Fiesch approx. 15 min by car, then continue by mountain railway", gomsTime: "approx. 25–40 min by car, depending on the trail", distantTime: "possible day trips; travel times depend on traffic and connections",
     locationEyebrow: "A MOUNTAIN HAMLET, WELL CONNECTED", locationTitle: "A hamlet<br>of its own. A valley<br>of possibilities.", locationBody: "The chalet is in the lovely hamlet of Ried above Bellwald. By car, Bellwald and the cable-car station are just a few minutes away. By train, travel to Fiesch and continue up to Bellwald by mountain railway. Please check the current timetable for the last leg to Ried.", timetableLink: "Plan your journey with SBB", locationCaption: "THE VIEW FROM RIED",
     guestCardEyebrow: "MORE VALAIS WITH THE GUEST CARD", guestCardTitle: "A little card.<br>More to explore.", guestCardBody: "Overnight guests receive the Bellwald Guest Card, with seasonal discounts and offers in Bellwald and the surrounding region. Benefits vary depending on the season and current programme.", guestCardLink: "See current Guest Card benefits",
-    bookingEyebrow: "YOUR MOUNTAIN BREAK STARTS HERE", bookingTitle: "When are you<br>heading to the mountains?", bookingBody: "Choose your apartment and dates. We will check availability and get back to you personally.", calendarStatus: "The live availability calendar is still being set up. Please enquire for current availability.", apartmentLabel: "Apartment", arrivalLabel: "Check-in", departureLabel: "Check-out", guestCountLabel: "Guests", bookingButton: "Prepare enquiry", formNote: "No-obligation enquiry · 3-night minimum stay", footerLine: "Two apartments. One home in the mountains.", backTop: "Back to top",
+    bookingEyebrow: "YOUR MOUNTAIN BREAK STARTS HERE", bookingTitle: "When are you<br>heading to the mountains?", bookingBody: "Choose your apartment and dates. We will check availability and get back to you personally.", calendarStatus: "The calendar shows published booking blocks. We confirm availability personally after receiving your enquiry.", apartmentLabel: "Apartment", arrivalLabel: "Check-in", departureLabel: "Check-out", guestCountLabel: "Guests", bookingButton: "Prepare enquiry", formNote: "No-obligation enquiry · 3-night minimum stay", footerLine: "Two apartments. One home in the mountains.", backTop: "Back to top",
     errorDates: "Please choose valid arrival and departure dates.", errorMinimum: "The minimum stay is 3 nights.", errorCapacity: "Please check the maximum occupancy: Wiisshoru 7, Schwarznasa 4, both apartments 11 guests.", requestReady: "Your enquiry is ready. A contact email or connected booking calendar is still needed to confirm availability."
   },
   nl: {
@@ -38,7 +38,7 @@ const translations = {
     experienceEyebrow: "ELK SEIZOEN ZIJN EIGEN SFEER", experienceTitle: "Een dal vol<br>goede redenen.", experienceIntro: "Bellwald is klein genoeg om op adem te komen en groot genoeg voor elke dag iets nieuws.", summerTag: "ZOMER", summerTitle: "Paden, trails<br>& vergezichten.", summerBody: "Wandelroutes vlakbij, het bikepark van Bellwald, speeltuinen en uitstapjes naar de Aletsch Arena. Het Goms nodigt uit tot langlaufen; Wallis tot eindeloze bergtochten.", summerLink: "Zomer in Bellwald", winterTag: "WINTER", winterTitle: "Sneeuw voor de deur.<br>Rust daarna.", winterBody: "Gezinsvriendelijke pistes, skischool en winterwandelroutes in Bellwald. De langlaufroutes in het Goms en andere skigebieden in Wallis zijn mooie dagtrips.", winterLink: "Winter in Bellwald", daytripsEyebrow: "LEUKE IDEEËN VOOR EEN DAGJE UIT", aletschTime: "Fiesch ca. 15 min. met de auto, daarna verder met de bergbaan", gomsTime: "afhankelijk van de loipe ca. 25–40 min. met de auto", distantTime: "geschikt als dagtrip; reistijd afhankelijk van verkeer en verbinding",
     locationEyebrow: "HOOG IN DE BERGEN, GOED BEREIKBAAR", locationTitle: "Een gehucht<br>op zichzelf. Een dal<br>vol mogelijkheden.", locationBody: "Het chalet ligt in het mooie gehucht Ried boven Bellwald. Met de auto zijn Bellwald en het dalstation in een paar minuten bereikbaar. Met de trein reis je naar Fiesch en daarna met de bergbaan omhoog naar Bellwald. Plan het laatste stuk naar Ried vooraf met de actuele dienstregeling.", timetableLink: "Plan je reis met SBB", locationCaption: "HET UITZICHT VANUIT RIED",
     guestCardEyebrow: "MEER WALLIS MET DE GASTENKAART", guestCardTitle: "Een kleine kaart.<br>Meer te ontdekken.", guestCardBody: "Als overnachtende gast ontvang je de Bellwald Gästekarte, met seizoensgebonden kortingen en aanbiedingen in Bellwald en de regio. De voordelen hangen af van het seizoen en het actuele aanbod.", guestCardLink: "Bekijk de actuele voordelen van de Gästekarte",
-    bookingEyebrow: "JE BERGVAKANTIE BEGINT HIER", bookingTitle: "Wanneer gaan jullie<br>de bergen in?", bookingBody: "Kies je appartement en reisdata. We controleren de beschikbaarheid en nemen persoonlijk contact op.", calendarStatus: "De live-beschikbaarheidskalender wordt nog ingericht. Vraag nu naar de beschikbaarheid.", apartmentLabel: "Appartement", arrivalLabel: "Aankomst", departureLabel: "Vertrek", guestCountLabel: "Gasten", bookingButton: "Aanvraag voorbereiden", formNote: "Vrijblijvende aanvraag · minimaal 3 nachten", footerLine: "Twee appartementen. Eén thuis in de bergen.", backTop: "Terug naar boven",
+    bookingEyebrow: "JE BERGVAKANTIE BEGINT HIER", bookingTitle: "Wanneer gaan jullie<br>de bergen in?", bookingBody: "Kies je appartement en reisdata. We controleren de beschikbaarheid en nemen persoonlijk contact op.", calendarStatus: "De kalender toont gepubliceerde boekingsblokkades. Na je aanvraag bevestigen we de beschikbaarheid persoonlijk.", apartmentLabel: "Appartement", arrivalLabel: "Aankomst", departureLabel: "Vertrek", guestCountLabel: "Gasten", bookingButton: "Aanvraag voorbereiden", formNote: "Vrijblijvende aanvraag · minimaal 3 nachten", footerLine: "Twee appartementen. Eén thuis in de bergen.", backTop: "Terug naar boven",
     errorDates: "Kies geldige aankomst- en vertrekdata.", errorMinimum: "Het minimale verblijf is 3 nachten.", errorCapacity: "Controleer de maximale bezetting: Wiisshoru 7, Schwarznasa 4, beide appartementen 11 gasten.", requestReady: "Je aanvraag is voorbereid. Voor een definitieve beschikbaarheidscontrole is nog een e-mailadres of gekoppelde boekingskalender nodig."
   }
 };
@@ -50,6 +50,11 @@ Object.assign(translations.de, {
   locationBody: "Euer Rückzugsort im Weiler Ried. Bellwald und die Talstation sind wenige Autominuten entfernt. Mit dem ÖV: via Fiesch und Bergbahn nach Bellwald; die Weiterreise nach Ried bitte vorab planen.",
   locationCaption: "EUER BELLHEIM IN RIED",
   heroBook: "Buchen",
+  bookingLaunchEyebrow: "BUCHUNGSANFRAGE",
+  bookingLaunchTitle: "Wählt eure Auszeit.",
+  bookingLaunchBody: "Im nächsten Schritt wählt ihr Wohnung, Reisedaten und Gäste. Der Richtpreis wird direkt berechnet; eure Anfrage bleibt unverbindlich, bis wir Verfügbarkeit und Buchung schriftlich bestätigen.",
+  bookingLaunchButton: "Buchungsanfrage starten",
+  bookingLaunchNote: "Keine Onlinezahlung. Wir prüfen jede Anfrage persönlich und melden uns per E-Mail.",
   summerMapLink: "Interaktive Sommerkarte",
   winterMapLink: "Interaktiver Pistenplan",
   apartmentsEyebrow: "ZWEI CHARAKTERE · EIN ZUHAUSE",
@@ -90,7 +95,7 @@ Object.assign(translations.de, {
   winterSeason: "Winter inkl. Feiertage & Sportferien",
   combinedNote: "Kein pauschaler Zuschlag. Die Winterpreise gelten auch an Weihnachten, Neujahr und während der Sportferien.",
   priceNote: "Mindestaufenthalt 3 Nächte. Strom und Wasser inklusive. Endreinigung pro Buchung: Wiisshoru CHF 200, Schwarznasa CHF 150, beide Wohnungen CHF 350. Bettwäsche auf Wunsch. Gästekarte und Kurtaxe gemäss Bellwalder Regelung.",
-  guestCardBody: "Mit der Bellwald Gästekarte fahren Gäste im Sommer kostenlos mit den Bellwalder Sportbahnen (Bikepark und Funsportgeräte ausgenommen). Im Winter gehören unter anderem Skibus und Kinderbetreuung zu den Vorteilen. Die Leistungen sind saisonabhängig; der Gastgeber stellt die Karte vor der Anreise bereit.",
+  guestCardBody: "Als Übernachtungsgäste im Bellheim erhaltet ihr die Bellwald Gästekarte. Sie bietet saisonabhängige Sommer- und Winterleistungen: Im Sommer fahren Gäste kostenlos mit den Bellwalder Sportbahnen (Bikepark und Funsportgeräte ausgenommen); im Winter gehören unter anderem Skibus und Kinderbetreuung dazu. Die aktuellen Leistungen können je nach Saison variieren; die Gastgeber stellen die Karte vor der Anreise bereit.",
   emailContactLabel: "Schreib uns gerne",
   guestNameLabel: "Dein Name",
   guestEmailLabel: "Deine E-Mail-Adresse",
@@ -122,6 +127,11 @@ Object.assign(translations.en, {
   locationBody: "Your retreat in the hamlet of Ried, a few minutes by car from Bellwald and the cable-car station. By public transport: via Fiesch and the cable car to Bellwald; plan the onward journey to Ried in advance.",
   locationCaption: "YOUR BELLHEIM IN RIED",
   heroBook: "Book",
+  bookingLaunchEyebrow: "BOOKING ENQUIRY",
+  bookingLaunchTitle: "Plan your mountain escape.",
+  bookingLaunchBody: "Next, choose your apartment, dates and guests. The estimated total is calculated for you. Your enquiry is non-binding until we confirm availability and the booking in writing.",
+  bookingLaunchButton: "Start booking enquiry",
+  bookingLaunchNote: "No online payment. We review each enquiry personally and reply by email.",
   summerMapLink: "Interactive summer map",
   winterMapLink: "Interactive piste map",
   apartmentsEyebrow: "TWO CHARACTERS · ONE HOME",
@@ -162,7 +172,7 @@ Object.assign(translations.en, {
   winterSeason: "Winter incl. holidays",
   combinedNote: "No flat seasonal surcharge. Winter rates also apply at Christmas, New Year and during school holidays.",
   priceNote: "Minimum stay 3 nights. Electricity and water included. Final cleaning per booking: Wiisshoru CHF 200, Schwarznasa CHF 150, both apartments CHF 350. Bed linen on request. Guest Card and tourist tax follow Bellwald's regulations.",
-  guestCardBody: "The Bellwald Guest Card gives guests free use of the Bellwald mountain railways in summer (bike park and fun-sport equipment excluded). Winter benefits include the ski bus and childcare. Services vary by season; your host provides the card before arrival.",
+  guestCardBody: "Guests staying at Bellheim receive the Bellwald Guest Card. It offers seasonal summer and winter benefits: free use of Bellwald mountain railways in summer (bike park and fun-sport equipment excluded), plus benefits such as the ski bus and childcare in winter. Services vary by season; your host provides the card before arrival.",
   emailContactLabel: "Get in touch by email",
   guestNameLabel: "Your name",
   guestEmailLabel: "Your email address",
@@ -194,6 +204,11 @@ Object.assign(translations.nl, {
   locationBody: "Jullie rustplek in het gehucht Ried, op enkele autominuten van Bellwald en het dalstation. Met het OV: via Fiesch en de bergbaan naar Bellwald; plan de verdere reis naar Ried vooraf.",
   locationCaption: "JULLIE BELLHEIM IN RIED",
   heroBook: "Boeken",
+  bookingLaunchEyebrow: "BOEKINGSAANVRAAG",
+  bookingLaunchTitle: "Plan jullie bergvakantie.",
+  bookingLaunchBody: "Kies hierna je appartement, reisdata en gasten. De richtprijs wordt direct berekend. Je aanvraag is vrijblijvend totdat we de beschikbaarheid en boeking schriftelijk bevestigen.",
+  bookingLaunchButton: "Start je boekingsaanvraag",
+  bookingLaunchNote: "Geen online betaling. We controleren elke aanvraag persoonlijk en reageren per e-mail.",
   summerMapLink: "Interactieve zomerkaart",
   winterMapLink: "Interactieve pistekaart",
   apartmentsEyebrow: "TWEE KARAKTERS · ÉÉN THUIS",
@@ -234,7 +249,7 @@ Object.assign(translations.nl, {
   winterSeason: "Winter incl. vakanties",
   combinedNote: "Geen vaste seizoentoeslag. De winterprijzen gelden ook met Kerst, Oud en Nieuw en tijdens de schoolvakanties.",
   priceNote: "Minimaal verblijf 3 nachten. Elektriciteit en water inbegrepen. Eindschoonmaak per boeking: Wiisshoru CHF 200, Schwarznasa CHF 150, beide appartementen CHF 350. Bedlinnen op aanvraag. Gästekarte en toeristenbelasting volgens de Bellwald-regels.",
-  guestCardBody: "Met de Bellwald Gästekarte reizen gasten in de zomer gratis met de bergbanen van Bellwald (bikepark en funsportmateriaal uitgesloten). In de winter horen onder meer de skibus en kinderopvang bij de voordelen. Het aanbod verschilt per seizoen; de gastheer zorgt vóór aankomst voor de kaart.",
+  guestCardBody: "Als overnachtende gast in Bellheim ontvang je de Bellwald Gästekarte. Deze biedt seizoensgebonden zomer- en wintervoordelen: in de zomer gratis gebruik van de bergbanen in Bellwald (bikepark en funsportmateriaal uitgesloten); in de winter onder meer de skibus en kinderopvang. Het aanbod verschilt per seizoen; de gastheer zorgt vóór aankomst voor de kaart.",
   emailContactLabel: "Stuur ons gerust een e-mail",
   guestNameLabel: "Je naam",
   guestEmailLabel: "Je e-mailadres",
@@ -259,6 +274,59 @@ Object.assign(translations.nl, {
   mailNights: "Nachten",
   mailGuests: "Gasten"
 });
+
+Object.assign(translations.de, {
+  bookingPageTitle: "Buchungsanfrage | Chalet Bellheim",
+  bookingBanner: "BUCHUNGSANFRAGE · KEINE ONLINEZAHLUNG",
+  bookingPageIntro: "Wählt Wohnung und Reisedaten. Ihr seht den Gesamtpreis direkt. Die Anfrage bleibt unverbindlich; nach unserer Verfügbarkeitsprüfung und schriftlichen Buchungsbestätigung wird der Gesamtbetrag fällig.",
+  bookingStepStay: "Aufenthalt", bookingStepPrice: "Preisübersicht", bookingStepSend: "Anfrage senden",
+  bookingSectionStay: "1. Aufenthalt", bookingSectionStayIntro: "Wählt eure Unterkunft und die gewünschte Reisezeit.", bookingRequiredNote: "Mit * gekennzeichnete Felder sind Pflichtfelder.",
+  bookingApartmentWhole: "Bellheim · ganzes Chalet · max. 11 Personen", bookingApartmentUpper: "Wiisshoru · Obergeschoss · max. 7 Personen", bookingApartmentLower: "Schwarznasa · Erdgeschoss · max. 4 Personen", bookingSeasonLabel: "Tarifperiode", bookingSeasonAuto: "Wird anhand des Aufenthalts berechnet",
+  bookingSeasonPeriods: "Tarifzeiträume: Winter 15.12.–15.04. · Basiszeit 16.04.–14.06. und 01.11.–14.12. · Sommer 15.06.–31.08. · Herbst 01.09.–31.10. Der Wintertarif gilt auch an Weihnachten, Neujahr und während der Sportferien.",
+  bookingArrival: "Anreise", bookingDeparture: "Abreise", bookingCalendar: "Belegungsplan", bookingPreviousMonth: "Vorheriger Monat", bookingNextMonth: "Nächster Monat", bookingCalendarStatus: "Grün = im veröffentlichten Belegungsplan nicht blockiert, Rot = gebuchte Übernachtung. Jede Anfrage wird persönlich bestätigt.", bookingMonday: "Mo", bookingTuesday: "Di", bookingWednesday: "Mi", bookingThursday: "Do", bookingFriday: "Fr", bookingSaturday: "Sa", bookingSunday: "So", bookingLegendOpen: "Im Plan nicht blockiert", bookingLegendBooked: "Gebuchte Übernachtung", bookingCalendarGroup: "Termine auswählen", bookingMinimumStay: "Mindestaufenthalt: 3 Nächte. Die Verfügbarkeit wird nach Eingang der Anfrage manuell geprüft.",
+  bookingCalendarOpenDate: "nicht als gebucht erfasst; Verfügbarkeit auf Anfrage", bookingCalendarBookedDate: "gebuchte Übernachtung; als Abreisetag prüfbar", bookingCalendarArrivalBooked: "Diese Übernachtung ist bereits als gebucht markiert und kann nicht als Anreise gewählt werden. Am Abreisetag einer früheren Buchung ist eine neue Anreise möglich.", bookingCalendarMinimumDate: "Der Mindestaufenthalt beträgt 3 Nächte. Wählt ein Abreisedatum mindestens 3 Tage nach der Anreise.", bookingCalendarConflictDate: "Dieser Zeitraum enthält bereits gebuchte Übernachtungen. Wählt bitte andere Daten.",
+  bookingSectionGuests: "2. Gäste & Kontakt", bookingSectionGuestsIntro: "Damit wir eure Anfrage persönlich beantworten können.", bookingAdults: "Erwachsene", bookingYouth: "Jugendliche · 6–15 Jahre", bookingChildren: "Kinder · unter 6 Jahre", bookingDogs: "Hunde", bookingAdultPerson: "Erwachsene Person", bookingYouthPerson: "Jugendliche Person · 6–15 Jahre", bookingChildPerson: "Kind unter 6 Jahre", bookingFirstName: "Vorname", bookingLastName: "Nachname", bookingEmail: "E-Mail-Adresse", bookingPhonePrefix: "Vorwahl", bookingPhone: "Telefonnummer", bookingStreet: "Strasse", bookingHouse: "Hausnummer", bookingPostalCode: "PLZ", bookingCity: "Ort", bookingCountry: "Land", bookingOtherCountry: "Land angeben", bookingContactNote: "Die Angaben werden in die Anfrage übernommen. Beim Absenden öffnet sich euer E-Mail-Programm; gesendet wird erst nach eurer Bestätigung.",
+  bookingCancellationSection: "3. Stornierungsbedingungen · Vorschlag", bookingCancellationDisclaimer: "Beispiel zur Abstimmung, noch keine bestätigten Vertragsbedingungen. Vor Veröffentlichung rechtlich prüfen lassen.", bookingCancellationHeading: "Faire Staffelung als Gesprächsgrundlage", bookingCancellationBefore: "Frist jeweils vor dem Anreisedatum:", bookingCancel90: "90 Tage oder früher", bookingCancel90Fee: "kostenfrei · 100% Rückerstattung", bookingCancel60: "89 bis 60 Tage", bookingCancel60Fee: "50% Stornogebühr des Mietpreises", bookingCancel30: "59 bis 30 Tage", bookingCancel30Fee: "75% Stornogebühr des Mietpreises", bookingCancelLate: "29 Tage oder weniger / No-show", bookingCancelLateFee: "100% Stornogebühr des Mietpreises", bookingCancellationNote: "Die Stornogebühr bezieht sich auf den bestätigten Mietpreis inklusive Endreinigung, aber ohne Kurtaxe. Bei einer Stornierung vor Anreise wird die vorausbezahlte Kurtaxe vollständig zurückerstattet. Diese Beispielstaffel muss vor Nutzung bestätigt und rechtlich geprüft werden.",
+  bookingSummary: "Preisübersicht", bookingEstimate: "Unverbindlicher Richtpreis · CHF", bookingChooseDates: "Reisedaten auswählen", bookingPeople: "Personen", bookingAdultsShort: "Erwachsene", bookingYouthShort: "Jugendliche", bookingChildrenShort: "Kinder unter 6", bookingDogsShort: "Hunde", bookingCapacityWarning: "Zu viele Personen für {apartment}: maximal {capacity}. Bitte passt die Gästezahl an; weitere Personen können nicht angefragt werden.", bookingMinimumWarning: "Mindestaufenthalt: 3 Nächte. Aktuell gewählt: {nights}. Bitte verlängert euren Aufenthalt.", bookingConflictWarning: "Der ausgewählte Aufenthalt enthält bereits gebuchte Übernachtungen. Bitte wählt andere Daten.", bookingUnavailablePrice: "Preis nicht verfügbar: Der Aufenthalt überschneidet sich mit gebuchten Übernachtungen.", bookingAccommodation: "Übernachtung", bookingCleaning: "Endreinigung", bookingRent: "Mietpreis ohne Kurtaxe", bookingTaxStay: "Kurtaxe · Aufenthalt", bookingTaxRates: "Pro Nacht: Erwachsene CHF 5.80 · Jugendliche ab 6 bis 15 Jahre CHF 2.90 · Kinder unter 6 Jahre gratis.", bookingGrandTotal: "Gesamt inkl. Kurtaxe", bookingFullPayment: "Gesamtzahlung · 100%", bookingAfterConfirmation: "nach schriftlicher Buchungsbestätigung", bookingPaymentNote: "Die unverbindliche Anfrage löst keine Zahlung aus. Der Gesamtbetrag wird erst nach schriftlicher Buchungsbestätigung fällig.", bookingUtilities: "Strom und Wasser inklusive. Bettwäsche auf Wunsch.", bookingGuestCard: "Als Übernachtungsgäste im Chalet Bellheim erhaltet ihr die Bellwald Gästekarte und profitiert von saisonalen Sommer- und Winterleistungen.", bookingGuestCardLink: "Leistungen der Gästekarte ansehen", bookingSubmit: "Anfrage per E-Mail vorbereiten", bookingNoAutomaticPayment: "Keine automatische Buchungsbestätigung und keine Onlinezahlung. Wir prüfen Verfügbarkeit und Preis persönlich; die Zahlung wird erst nach unserer schriftlichen Bestätigung vereinbart.", bookingFooter: "Unverbindliche Anfrage · Tarifzeiträume und Stornobedingungen vor einer Bestätigung prüfen.",
+  bookingErrorMinimum: "Bitte wählt gültige Daten mit mindestens 3 Übernachtungen.", bookingErrorConflict: "Der ausgewählte Zeitraum enthält bereits gebuchte Übernachtungen. Bitte wählt andere Daten.", bookingErrorNoGuests: "Bitte gebt mindestens eine erwachsene Person, eine jugendliche Person oder ein Kind an.", bookingErrorCapacity: "Für {apartment} sind maximal {capacity} Personen vorgesehen. Bitte passt die Gästezahl an.", bookingRequestReady: "Eure Anfrage ist vorbereitet. Verfügbarkeit und Richtpreis werden vor einer Bestätigung persönlich geprüft. Im nächsten Schritt öffnet sich euer E-Mail-Programm.", bookingEmailOpen: "E-Mail-Programm öffnen", bookingMailSubject: "Unverbindliche Buchungsanfrage Chalet Bellheim", bookingMailStay: "Unterkunft", bookingMailArrival: "Anreise", bookingMailDeparture: "Abreise", bookingMailNights: "Nächte", bookingMailSeasons: "Tarifperioden", bookingMailAdults: "Erwachsene", bookingMailYouth: "Jugendliche (6–15 Jahre)", bookingMailChildren: "Kinder unter 6 Jahre", bookingMailDogs: "Hunde", bookingMailEmail: "E-Mail", bookingMailPhone: "Telefon", bookingMailAddress: "Adresse", bookingMailRent: "Mietpreis ohne Kurtaxe", bookingMailCleaning: "Endreinigung", bookingMailTax: "Kurtaxe", bookingMailGrandTotal: "Richtpreis gesamt inklusive Kurtaxe", bookingMailFullPayment: "Gesamtzahlung (100% inklusive Kurtaxe) nach schriftlicher Buchungsbestätigung", bookingMailNote: "Hinweis: Verfügbarkeit, Kurtaxe und Bedingungen bitte bestätigen."
+});
+Object.assign(translations.en, {
+  bookingPageTitle: "Booking enquiry | Chalet Bellheim",
+  bookingBanner: "BOOKING ENQUIRY · NO ONLINE PAYMENT",
+  bookingPageIntro: "Choose your apartment and dates to see the total price. Your enquiry is non-binding; the full amount is due only after we check availability and confirm the booking in writing.",
+  bookingStepStay: "Stay", bookingStepPrice: "Price summary", bookingStepSend: "Send enquiry",
+  bookingSectionStay: "1. Your stay", bookingSectionStayIntro: "Choose your accommodation and travel dates.", bookingRequiredNote: "Fields marked with * are required.",
+  bookingApartmentWhole: "Bellheim · whole chalet · max. 11 guests", bookingApartmentUpper: "Wiisshoru · upper floor · max. 7 guests", bookingApartmentLower: "Schwarznasa · ground floor · max. 4 guests", bookingSeasonLabel: "Rate period", bookingSeasonAuto: "Calculated from your stay",
+  bookingSeasonPeriods: "Rate periods: Winter 15 Dec–15 Apr · Standard 16 Apr–14 Jun and 1 Nov–14 Dec · Summer 15 Jun–31 Aug · Autumn 1 Sep–31 Oct. Winter rates also cover Christmas, New Year and school holidays.",
+  bookingArrival: "Arrival", bookingDeparture: "Departure", bookingCalendar: "Availability calendar", bookingPreviousMonth: "Previous month", bookingNextMonth: "Next month", bookingCalendarStatus: "Green = not blocked in the published calendar; red = booked night. We confirm every enquiry personally.", bookingMonday: "Mon", bookingTuesday: "Tue", bookingWednesday: "Wed", bookingThursday: "Thu", bookingFriday: "Fri", bookingSaturday: "Sat", bookingSunday: "Sun", bookingLegendOpen: "Not blocked in calendar", bookingLegendBooked: "Booked night", bookingCalendarGroup: "Select dates", bookingMinimumStay: "Minimum stay: 3 nights. Availability is checked manually after your enquiry.",
+  bookingCalendarOpenDate: "not marked as booked; availability on request", bookingCalendarBookedDate: "booked night; may be selected as departure", bookingCalendarArrivalBooked: "This night is marked as booked and cannot be selected as arrival. A new arrival on a previous guest's departure day may be possible.", bookingCalendarMinimumDate: "Minimum stay is 3 nights. Choose a departure at least 3 days after arrival.", bookingCalendarConflictDate: "This stay includes booked nights. Please choose different dates.",
+  bookingSectionGuests: "2. Guests & contact", bookingSectionGuestsIntro: "So we can reply to your enquiry personally.", bookingAdults: "Adults", bookingYouth: "Young guests · ages 6–15", bookingChildren: "Children · under 6", bookingDogs: "Dogs", bookingAdultPerson: "Adult", bookingYouthPerson: "Young guest · ages 6–15", bookingChildPerson: "Child under 6", bookingFirstName: "First name", bookingLastName: "Last name", bookingEmail: "Email address", bookingPhonePrefix: "Calling code", bookingPhone: "Phone number", bookingStreet: "Street", bookingHouse: "House number", bookingPostalCode: "Postcode", bookingCity: "Town / city", bookingCountry: "Country", bookingOtherCountry: "Enter country", bookingContactNote: "These details are included in your enquiry. Your email app opens when you continue; the message is sent only after you confirm.",
+  bookingCancellationSection: "3. Cancellation terms · proposal", bookingCancellationDisclaimer: "Draft for discussion, not yet confirmed terms. Please obtain legal review before publishing.", bookingCancellationHeading: "Suggested cancellation scale", bookingCancellationBefore: "Notice period before arrival:", bookingCancel90: "90 days or more", bookingCancel90Fee: "Free cancellation · 100% refund", bookingCancel60: "89 to 60 days", bookingCancel60Fee: "50% cancellation fee on rent", bookingCancel30: "59 to 30 days", bookingCancel30Fee: "75% cancellation fee on rent", bookingCancelLate: "29 days or less / no-show", bookingCancelLateFee: "100% cancellation fee on rent", bookingCancellationNote: "The fee is based on the confirmed rent including final cleaning, excluding tourist tax. Tourist tax paid in advance is fully refunded if cancelled before arrival. Confirm and legally review these draft terms before use.",
+  bookingSummary: "Price summary", bookingEstimate: "Indicative price · CHF", bookingChooseDates: "Choose dates", bookingPeople: "Guests", bookingAdultsShort: "adults", bookingYouthShort: "young guests", bookingChildrenShort: "children under 6", bookingDogsShort: "dogs", bookingCapacityWarning: "Too many guests for {apartment}: maximum {capacity}. Please adjust the guest count; additional guests cannot be requested.", bookingMinimumWarning: "Minimum stay: 3 nights. Currently selected: {nights}. Please extend your stay.", bookingConflictWarning: "The selected stay includes booked nights. Please choose different dates.", bookingUnavailablePrice: "Price unavailable: this stay overlaps booked nights.", bookingAccommodation: "Accommodation · {nights}", bookingCleaning: "Final cleaning", bookingRent: "Rent excluding tourist tax", bookingTaxStay: "Tourist tax · stay", bookingTaxRates: "Per night: adults CHF 5.80 · ages 6–15 CHF 2.90 · under 6 free.", bookingGrandTotal: "Total including tourist tax", bookingFullPayment: "Full payment · 100%", bookingAfterConfirmation: "after written confirmation", bookingPaymentNote: "The enquiry does not trigger a payment. The full amount is due only after written booking confirmation.", bookingUtilities: "Electricity and water included. Bed linen on request.", bookingGuestCard: "Guests staying at Chalet Bellheim receive the Bellwald Guest Card, with seasonal summer and winter benefits.", bookingGuestCardLink: "See Guest Card benefits", bookingSubmit: "Prepare email enquiry", bookingNoAutomaticPayment: "No automatic confirmation or online payment. We check availability and price personally; payment is arranged only after written confirmation.", bookingFooter: "Non-binding enquiry · confirm rate periods and cancellation terms before booking.",
+  bookingErrorMinimum: "Please choose valid dates with a minimum stay of 3 nights.", bookingErrorConflict: "The selected stay includes booked nights. Please choose different dates.", bookingErrorNoGuests: "Please enter at least one adult, young guest or child.", bookingErrorCapacity: "Maximum occupancy for {apartment} is {capacity}. Please adjust the guest count.", bookingRequestReady: "Your enquiry is ready. We will personally check availability and price before confirming. Your email app will open next.", bookingEmailOpen: "Open email app", bookingMailSubject: "Non-binding booking enquiry Chalet Bellheim", bookingMailStay: "Accommodation", bookingMailArrival: "Arrival", bookingMailDeparture: "Departure", bookingMailNights: "Nights", bookingMailSeasons: "Rate periods", bookingMailAdults: "Adults", bookingMailYouth: "Young guests (6–15)", bookingMailChildren: "Children under 6", bookingMailDogs: "Dogs", bookingMailEmail: "Email", bookingMailPhone: "Phone", bookingMailAddress: "Address", bookingMailRent: "Rent excluding tourist tax", bookingMailCleaning: "Final cleaning", bookingMailTax: "Tourist tax", bookingMailGrandTotal: "Estimated total including tourist tax", bookingMailFullPayment: "Full payment (100% including tourist tax) after written booking confirmation", bookingMailNote: "Note: please confirm availability, tourist tax and terms."
+});
+Object.assign(translations.nl, {
+  bookingPageTitle: "Boekingsaanvraag | Chalet Bellheim",
+  bookingBanner: "BOEKINGSAANVRAAG · GEEN ONLINE BETALING",
+  bookingPageIntro: "Kies je appartement en reisdata om de totaalprijs te zien. Je aanvraag is vrijblijvend; het volledige bedrag is pas verschuldigd nadat we de beschikbaarheid hebben gecontroleerd en de boeking schriftelijk hebben bevestigd.",
+  bookingStepStay: "Verblijf", bookingStepPrice: "Prijsopgave", bookingStepSend: "Aanvraag versturen",
+  bookingSectionStay: "1. Verblijf", bookingSectionStayIntro: "Kies je accommodatie en reisdata.", bookingRequiredNote: "Velden met * zijn verplicht.",
+  bookingApartmentWhole: "Bellheim · heel chalet · max. 11 gasten", bookingApartmentUpper: "Wiisshoru · bovenverdieping · max. 7 gasten", bookingApartmentLower: "Schwarznasa · begane grond · max. 4 gasten", bookingSeasonLabel: "Tariefperiode", bookingSeasonAuto: "Wordt berekend op basis van je verblijf",
+  bookingSeasonPeriods: "Tariefperiodes: winter 15-12 t/m 15-04 · standaard 16-04 t/m 14-06 en 01-11 t/m 14-12 · zomer 15-06 t/m 31-08 · herfst 01-09 t/m 31-10. Wintertarieven gelden ook met Kerst, Oud en Nieuw en schoolvakanties.",
+  bookingArrival: "Aankomst", bookingDeparture: "Vertrek", bookingCalendar: "Bezettingskalender", bookingPreviousMonth: "Vorige maand", bookingNextMonth: "Volgende maand", bookingCalendarStatus: "Groen = niet geblokkeerd in de gepubliceerde kalender; rood = geboekte nacht. We bevestigen elke aanvraag persoonlijk.", bookingMonday: "Ma", bookingTuesday: "Di", bookingWednesday: "Wo", bookingThursday: "Do", bookingFriday: "Vr", bookingSaturday: "Za", bookingSunday: "Zo", bookingLegendOpen: "Niet geblokkeerd in kalender", bookingLegendBooked: "Geboekte nacht", bookingCalendarGroup: "Datums kiezen", bookingMinimumStay: "Minimaal verblijf: 3 nachten. Na je aanvraag controleren we de beschikbaarheid handmatig.",
+  bookingCalendarOpenDate: "niet als geboekt gemarkeerd; beschikbaarheid op aanvraag", bookingCalendarBookedDate: "geboekte nacht; kan als vertrekdatum worden gekozen", bookingCalendarArrivalBooked: "Deze nacht is als geboekt gemarkeerd en kan niet als aankomst worden gekozen. Een nieuwe aankomst op de vertrekdag van een eerdere gast is mogelijk.", bookingCalendarMinimumDate: "Minimaal verblijf is 3 nachten. Kies een vertrekdatum minstens 3 dagen na aankomst.", bookingCalendarConflictDate: "Dit verblijf bevat geboekte nachten. Kies andere datums.",
+  bookingSectionGuests: "2. Gasten & contact", bookingSectionGuestsIntro: "Zo kunnen we persoonlijk op je aanvraag reageren.", bookingAdults: "Volwassenen", bookingYouth: "Jongeren · 6–15 jaar", bookingChildren: "Kinderen · jonger dan 6", bookingDogs: "Honden", bookingAdultPerson: "Volwassene", bookingYouthPerson: "Jongere · 6–15 jaar", bookingChildPerson: "Kind jonger dan 6", bookingFirstName: "Voornaam", bookingLastName: "Achternaam", bookingEmail: "E-mailadres", bookingPhonePrefix: "Landcode", bookingPhone: "Telefoonnummer", bookingStreet: "Straat", bookingHouse: "Huisnummer", bookingPostalCode: "Postcode", bookingCity: "Plaats", bookingCountry: "Land", bookingOtherCountry: "Land invullen", bookingContactNote: "Deze gegevens worden opgenomen in je aanvraag. Je e-mailprogramma opent als je verdergaat; de e-mail wordt pas verzonden na jouw bevestiging.",
+  bookingCancellationSection: "3. Annuleringsvoorwaarden · voorstel", bookingCancellationDisclaimer: "Concept ter bespreking, nog geen bevestigde voorwaarden. Laat dit juridisch controleren voordat je het publiceert.", bookingCancellationHeading: "Voorgestelde annuleringsregeling", bookingCancellationBefore: "Termijn vóór aankomst:", bookingCancel90: "90 dagen of eerder", bookingCancel90Fee: "Gratis annuleren · 100% terugbetaling", bookingCancel60: "89 tot 60 dagen", bookingCancel60Fee: "50% annuleringskosten over de huurprijs", bookingCancel30: "59 tot 30 dagen", bookingCancel30Fee: "75% annuleringskosten over de huurprijs", bookingCancelLate: "29 dagen of minder / no-show", bookingCancelLateFee: "100% annuleringskosten over de huurprijs", bookingCancellationNote: "De kosten worden berekend over de bevestigde huurprijs inclusief eindschoonmaak, exclusief toeristenbelasting. Vooraf betaalde toeristenbelasting wordt bij annulering vóór aankomst volledig terugbetaald. Bevestig en laat deze conceptvoorwaarden juridisch controleren.",
+  bookingSummary: "Prijsopgave", bookingEstimate: "Indicatieve prijs · CHF", bookingChooseDates: "Kies reisdata", bookingPeople: "Personen", bookingAdultsShort: "volwassenen", bookingYouthShort: "jongeren", bookingChildrenShort: "kinderen jonger dan 6", bookingDogsShort: "honden", bookingCapacityWarning: "Te veel personen voor {apartment}: maximaal {capacity}. Pas het aantal gasten aan; extra gasten kunnen niet worden aangevraagd.", bookingMinimumWarning: "Minimaal verblijf: 3 nachten. Geselecteerd: {nights}. Verleng je verblijf.", bookingConflictWarning: "Het geselecteerde verblijf bevat geboekte nachten. Kies andere datums.", bookingUnavailablePrice: "Prijs niet beschikbaar: dit verblijf overlapt met geboekte nachten.", bookingAccommodation: "Overnachting · {nights}", bookingCleaning: "Eindschoonmaak", bookingRent: "Huurprijs exclusief toeristenbelasting", bookingTaxStay: "Toeristenbelasting · verblijf", bookingTaxRates: "Per nacht: volwassenen CHF 5.80 · 6–15 jaar CHF 2.90 · jonger dan 6 gratis.", bookingGrandTotal: "Totaal inclusief toeristenbelasting", bookingFullPayment: "Volledige betaling · 100%", bookingAfterConfirmation: "na schriftelijke bevestiging", bookingPaymentNote: "De aanvraag leidt niet tot een betaling. Het volledige bedrag is pas verschuldigd na schriftelijke boekingsbevestiging.", bookingUtilities: "Elektriciteit en water inbegrepen. Bedlinnen op aanvraag.", bookingGuestCard: "Overnachtende gasten van Chalet Bellheim ontvangen de Bellwald Gästekarte met seizoensgebonden zomer- en wintervoordelen.", bookingGuestCardLink: "Bekijk de voordelen van de Gästekarte", bookingSubmit: "E-mailaanvraag voorbereiden", bookingNoAutomaticPayment: "Geen automatische boekingsbevestiging of online betaling. We controleren beschikbaarheid en prijs persoonlijk; betaling wordt pas na schriftelijke bevestiging geregeld.", bookingFooter: "Vrijblijvende aanvraag · bevestig tariefperiodes en annuleringsvoorwaarden vóór boeking.",
+  bookingErrorMinimum: "Kies geldige datums met minimaal 3 overnachtingen.", bookingErrorConflict: "Het geselecteerde verblijf bevat geboekte nachten. Kies andere datums.", bookingErrorNoGuests: "Vul minstens één volwassene, jongere of kind in.", bookingErrorCapacity: "Voor {apartment} zijn maximaal {capacity} personen toegestaan. Pas het aantal gasten aan.", bookingRequestReady: "Je aanvraag is klaar. We controleren beschikbaarheid en prijs persoonlijk voordat we bevestigen. Je e-mailprogramma wordt geopend.", bookingEmailOpen: "E-mailprogramma openen", bookingMailSubject: "Vrijblijvende boekingsaanvraag Chalet Bellheim", bookingMailStay: "Accommodatie", bookingMailArrival: "Aankomst", bookingMailDeparture: "Vertrek", bookingMailNights: "Nachten", bookingMailSeasons: "Tariefperiodes", bookingMailAdults: "Volwassenen", bookingMailYouth: "Jongeren (6–15 jaar)", bookingMailChildren: "Kinderen jonger dan 6", bookingMailDogs: "Honden", bookingMailEmail: "E-mail", bookingMailPhone: "Telefoon", bookingMailAddress: "Adres", bookingMailRent: "Huurprijs exclusief toeristenbelasting", bookingMailCleaning: "Eindschoonmaak", bookingMailTax: "Toeristenbelasting", bookingMailGrandTotal: "Indicatieve totaalprijs inclusief toeristenbelasting", bookingMailFullPayment: "Volledige betaling (100% inclusief toeristenbelasting) na schriftelijke boekingsbevestiging", bookingMailNote: "Let op: beschikbaarheid, toeristenbelasting en voorwaarden nog bevestigen."
+});
+
+Object.assign(translations.de, { bookingDogOne: "Hund", bookingNightOne: "Nacht", bookingNightMany: "Nächte", bookingCountryCH: "Schweiz", bookingCountryDE: "Deutschland", bookingCountryAT: "Österreich", bookingCountryFR: "Frankreich", bookingCountryIT: "Italien", bookingCountryNL: "Niederlande", bookingCountryBE: "Belgien", bookingCountryLU: "Luxemburg", bookingCountryGB: "Vereinigtes Königreich", bookingCountryUS: "Vereinigte Staaten", bookingCountryOther: "Anderes Land" });
+Object.assign(translations.en, { bookingDogOne: "dog", bookingNightOne: "night", bookingNightMany: "nights", bookingCountryCH: "Switzerland", bookingCountryDE: "Germany", bookingCountryAT: "Austria", bookingCountryFR: "France", bookingCountryIT: "Italy", bookingCountryNL: "Netherlands", bookingCountryBE: "Belgium", bookingCountryLU: "Luxembourg", bookingCountryGB: "United Kingdom", bookingCountryUS: "United States", bookingCountryOther: "Other country" });
+Object.assign(translations.nl, { bookingDogOne: "hond", bookingNightOne: "nacht", bookingNightMany: "nachten", bookingCountryCH: "Zwitserland", bookingCountryDE: "Duitsland", bookingCountryAT: "Oostenrijk", bookingCountryFR: "Frankrijk", bookingCountryIT: "Italië", bookingCountryNL: "Nederland", bookingCountryBE: "België", bookingCountryLU: "Luxemburg", bookingCountryGB: "Verenigd Koninkrijk", bookingCountryUS: "Verenigde Staten", bookingCountryOther: "Ander land" });
+Object.assign(translations.de, { bookingPageEyebrow: "EURE AUSZEIT IN BELLWALD", bookingPageHeading: "Eure Bergzeit<br>beginnt hier." });
+Object.assign(translations.en, { bookingPageEyebrow: "YOUR BELLWALD GETAWAY", bookingPageHeading: "Your mountain break<br>starts here." });
+Object.assign(translations.nl, { bookingPageEyebrow: "JULLIE UITSTAP IN BELLWALD", bookingPageHeading: "Jullie bergvakantie<br>begint hier." });
 
 const photoGalleryImages = {
   belalp: [
@@ -318,13 +386,13 @@ const photoGalleryImages = {
 };
 
 const languageSelect = document.querySelector("#language-select");
-const result = document.querySelector("#form-result");
-const bookingForm = document.querySelector("#booking-form");
 
 function setLanguage(language) {
   const selected = translations[language] ? language : "de";
   document.documentElement.lang = selected;
-  document.title = `Bellheim – ${translations[selected].slogan} | Chalet in Bellwald`;
+  document.title = document.body.dataset.pageType === "booking" && translations[selected].bookingPageTitle
+    ? translations[selected].bookingPageTitle
+    : `Bellheim – ${translations[selected].slogan} | Chalet in Bellwald`;
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const translated = translations[selected][element.dataset.i18n];
     if (translated) element.innerHTML = translated;
@@ -333,20 +401,27 @@ function setLanguage(language) {
     const translated = translations[selected][element.dataset.i18nAria];
     if (translated) element.setAttribute("aria-label", translated);
   });
+  document.querySelectorAll(".booking-start, [data-apartment]").forEach((link) => {
+    const bookingUrl = new URL("buchungsablauf-vorschau.html", window.location.href);
+    if (link.dataset.apartment) bookingUrl.searchParams.set("apartment", link.dataset.apartment);
+    bookingUrl.searchParams.set("lang", selected);
+    link.href = bookingUrl.href;
+  });
+  if (document.body.dataset.pageType === "booking") {
+    const currentUrl = new URL(window.location.href);
+    currentUrl.searchParams.set("lang", selected);
+    window.history.replaceState({}, "", currentUrl);
+  }
   localStorage.setItem("bellevue-language", selected);
 }
 
 const savedLanguage = localStorage.getItem("bellevue-language");
-if (savedLanguage && translations[savedLanguage]) languageSelect.value = savedLanguage;
+const requestedLanguage = new URLSearchParams(window.location.search).get("lang");
+if (requestedLanguage && translations[requestedLanguage]) languageSelect.value = requestedLanguage;
+else if (savedLanguage && translations[savedLanguage]) languageSelect.value = savedLanguage;
 setLanguage(languageSelect.value);
 languageSelect.addEventListener("change", () => setLanguage(languageSelect.value));
 document.querySelector("#year").textContent = new Date().getFullYear();
-
-document.querySelectorAll("[data-apartment]").forEach((link) => {
-  link.addEventListener("click", () => {
-    bookingForm.elements.apartment.value = link.dataset.apartment;
-  });
-});
 
 document.querySelectorAll(".photo-gallery[data-gallery]").forEach((gallery) => {
   const images = photoGalleryImages[gallery.dataset.gallery] || [];
@@ -380,61 +455,3 @@ document.querySelectorAll(".photo-gallery[data-gallery]").forEach((gallery) => {
   showImage();
 });
 
-const today = new Date();
-const localToday = new Date(today.getTime() - today.getTimezoneOffset() * 60000).toISOString().slice(0, 10);
-bookingForm.elements.arrival.min = localToday;
-bookingForm.elements.departure.min = localToday;
-bookingForm.elements.arrival.addEventListener("change", () => {
-  const arrival = new Date(`${bookingForm.elements.arrival.value}T00:00:00`);
-  arrival.setDate(arrival.getDate() + 1);
-  bookingForm.elements.departure.min = arrival.toISOString().slice(0, 10);
-});
-
-bookingForm.addEventListener("submit", (event) => {
-  event.preventDefault();
-  const formData = new FormData(bookingForm);
-  const arrival = new Date(`${formData.get("arrival")}T00:00:00`);
-  const departure = new Date(`${formData.get("departure")}T00:00:00`);
-  const nights = Math.round((departure - arrival) / 86400000);
-  const apartment = formData.get("apartment");
-  const adults = Number(formData.get("adults"));
-  const children = Number(formData.get("children"));
-  const dogs = Number(formData.get("dogs"));
-  const guests = adults + children;
-  const capacity = apartment === "Wiisshoru" ? 7 : apartment === "Schwarznasa" ? 4 : 11;
-  const language = languageSelect.value;
-
-  let message = "";
-  let mailto = "";
-  if (!formData.get("arrival") || !formData.get("departure") || nights < 1) message = translations[language].errorDates;
-  else if (nights < 3) message = translations[language].errorMinimum;
-  else if (guests < 1) message = translations[language].errorNoGuests;
-  else if (guests > capacity) message = translations[language].errorCapacity;
-  else {
-    const details = [
-      `${translations[language].mailGuest}: ${formData.get("guestName")}`,
-      `${translations[language].mailEmail}: ${formData.get("guestEmail")}`,
-      `${translations[language].mailApartment}: ${apartment}`,
-      `${translations[language].mailAdults}: ${adults}`,
-      `${translations[language].mailChildren}: ${children}`,
-      `${translations[language].mailDogs}: ${dogs}`,
-      `${translations[language].mailArrival}: ${formData.get("arrival")}`,
-      `${translations[language].mailDeparture}: ${formData.get("departure")}`,
-      `${translations[language].mailNights}: ${nights}`,
-      `${translations[language].mailGuests}: ${guests}`
-    ].join("\n");
-    const query = new URLSearchParams({ subject: translations[language].mailSubject, body: details });
-    mailto = `mailto:chalet.bellheim@gmail.com?${query.toString()}`;
-    message = translations[language].requestReady;
-  }
-
-  result.replaceChildren(document.createTextNode(message));
-  if (mailto) {
-    const emailLink = document.createElement("a");
-    emailLink.className = "button button-dark email-link";
-    emailLink.href = mailto;
-    emailLink.textContent = translations[language].emailAction;
-    result.append(emailLink);
-  }
-  result.hidden = false;
-});

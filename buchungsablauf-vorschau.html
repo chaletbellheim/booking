@@ -1,0 +1,608 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#faf8f2">
+  <meta name="description" content="Unverbindliche Buchungsanfrage und Preisübersicht für das Chalet Bellheim in Bellwald.">
+  <title>Buchungsanfrage | Chalet Bellheim</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body { background: var(--paper); }
+    .demo-banner { padding: 9px 16px; color: #fff; background: var(--clay); font-size: 11px; font-weight: 700; text-align: center; }
+    .demo-header { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 12px 6.2%; border-bottom: 1px solid var(--line); }
+    .demo-header .wordmark-icon { width: 56px; height: 64px; flex-basis: 56px; }
+    .demo-label { color: var(--muted); font-size: 12px; }
+    .booking-page { width: min(1120px, 88%); margin: 0 auto; padding: clamp(32px, 5vw, 62px) 0 70px; }
+    .page-heading { max-width: 650px; margin-bottom: 32px; }
+    .page-heading .eyebrow { margin-bottom: 9px; }
+    .page-heading h1 { margin: 0 0 12px; font-size: clamp(34px, 4vw, 50px); }
+    .page-heading p:last-child { max-width: 600px; margin: 0; color: var(--muted); }
+    .booking-steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-bottom: 28px; border-block: 1px solid var(--line); }
+    .booking-steps span { display: flex; align-items: center; gap: 10px; min-height: 54px; color: var(--muted); font-size: 12px; }
+    .booking-steps span + span { padding-left: 18px; border-left: 1px solid var(--line); }
+    .booking-steps b { display: grid; width: 26px; height: 26px; flex: 0 0 26px; place-items: center; border: 1px solid var(--line); border-radius: 50%; color: var(--pine); font-size: 11px; }
+    .booking-steps span:first-child { color: var(--pine); font-weight: 700; }
+    .booking-steps span:first-child b { border-color: var(--clay); color: #fff; background: var(--clay); }
+    .booking-layout { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(300px, .8fr); align-items: start; gap: clamp(26px, 5vw, 58px); }
+    .booking-form { display: grid; gap: 25px; }
+    .form-section { padding-bottom: 23px; border-bottom: 1px solid var(--line); }
+    .form-section h2 { margin: 0 0 5px; font-family: var(--sans); font-size: 17px; font-weight: 700; }
+    .form-section > p { margin: 0 0 18px; color: var(--muted); font-size: 13px; }
+    .field-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    .field-grid.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .field-grid.guest-counts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .guest-name-fields { display: grid; gap: 11px; margin-top: 14px; }
+    .guest-name-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; padding: 12px; border: 1px solid var(--line); border-radius: 4px; background: rgba(255,255,255,.55); }
+    .guest-name-heading { grid-column: 1 / -1; margin: 0; color: var(--pine); font-size: 12px; font-weight: 700; }
+    .booking-form label { display: grid; min-width: 0; gap: 6px; color: var(--ink); font-size: 12px; font-weight: 600; }
+    .booking-form input, .booking-form select { width: 100%; min-width: 0; min-height: 44px; padding: 9px 10px; border: 1px solid var(--line); border-radius: 3px; color: var(--ink); background: #fff; font: inherit; font-size: 14px; }
+    .booking-form input:focus, .booking-form select:focus { outline: 2px solid var(--brass); outline-offset: 1px; }
+    .required-mark { color: var(--clay); font-weight: 700; }
+    .required-note { margin: -10px 0 0; color: var(--muted); font-size: 10px; }
+    .phone-fields { display: grid; grid-template-columns: minmax(112px, .7fr) minmax(0, 1.3fr); gap: 9px; }
+    .field-help { display: block; margin-top: 8px; color: var(--muted); font-size: 11px; line-height: 1.5; }
+    .season-note { margin-top: 13px; padding: 12px 14px; border-left: 2px solid var(--brass); color: var(--muted); background: rgba(255,255,255,.55); font-size: 11px; line-height: 1.55; }
+    .availability-calendar { margin-top: 18px; padding: 16px; border: 1px solid var(--line); border-radius: 6px; background: rgba(255,255,255,.55); }
+    .calendar-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 8px; }
+    .calendar-heading h3 { margin: 0; font-family: var(--sans); font-size: 14px; font-weight: 700; }
+    .calendar-nav { display: flex; gap: 6px; }
+    .calendar-nav button { display: grid; width: 34px; height: 34px; place-items: center; border: 1px solid var(--line); border-radius: 4px; color: var(--pine); background: transparent; cursor: pointer; font-size: 19px; }
+    .calendar-nav button:hover { background: var(--paper-deep); }
+    .calendar-status { margin: 0 0 12px; color: var(--muted); font-size: 11px; line-height: 1.45; }
+    .calendar-weekdays, .calendar-grid { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 4px; }
+    .calendar-weekdays { margin-bottom: 5px; }
+    .calendar-weekdays span { padding: 5px 0; color: var(--muted); font-size: 10px; font-weight: 700; text-align: center; }
+    .calendar-day, .calendar-empty { display: grid; min-width: 0; aspect-ratio: 1; place-items: center; }
+    .calendar-day { padding: 0; border: 1px solid transparent; border-radius: 4px; color: var(--ink); background: transparent; cursor: pointer; font: inherit; font-size: 12px; }
+    .calendar-day:hover:not(:disabled) { border-color: var(--brass); background: var(--paper-deep); }
+    .calendar-day:disabled { color: #a5a49e; cursor: not-allowed; }
+    .calendar-day.is-open { color: var(--pine); background: rgba(52,72,59,.1); }
+    .calendar-day.is-booked { color: #fff; background: #b4533d; }
+    .calendar-day.is-selected, .calendar-day.is-in-range { color: #fff; background: var(--pine); }
+    .calendar-day.is-selected { border-color: var(--clay); background: var(--clay); }
+    .calendar-legend { display: flex; flex-wrap: wrap; gap: 8px 16px; margin-top: 11px; color: var(--muted); font-size: 10px; }
+    .legend-swatch { display: inline-block; width: 10px; height: 10px; margin-right: 5px; border-radius: 2px; vertical-align: -1px; }
+    .legend-open { background: rgba(52,72,59,.65); }
+    .legend-booked { background: #b4533d; }
+    .calendar-feedback { min-height: 17px; margin: 6px 0 0; color: var(--clay); font-size: 11px; }
+    .minimum-warning { margin: 9px 0 0; padding: 10px 12px; border-left: 2px solid var(--clay); color: #7d3d29; background: rgba(164,93,61,.1); font-size: 11px; line-height: 1.45; }
+    .minimum-warning[hidden] { display: none; }
+    .calendar-admin { margin-top: 13px; padding-top: 12px; border-top: 1px solid var(--line); }
+    .calendar-admin summary { color: var(--pine); cursor: pointer; font-size: 11px; font-weight: 700; }
+    .calendar-admin > p { margin: 9px 0 12px; color: var(--muted); font-size: 10px; line-height: 1.45; }
+    .calendar-admin-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; }
+    .calendar-admin label { display: grid; gap: 5px; color: var(--muted); font-size: 10px; }
+    .calendar-admin input { width: 100%; min-width: 0; min-height: 38px; padding: 6px; border: 1px solid var(--line); border-radius: 3px; background: #fff; font: inherit; }
+    .calendar-admin-action { width: 100%; min-height: 38px; margin-top: 9px; border: 1px solid var(--pine); border-radius: 3px; color: #fff; background: var(--pine); cursor: pointer; font: inherit; font-size: 11px; font-weight: 700; }
+    .blocked-list { display: grid; gap: 6px; margin: 10px 0 0; padding: 0; list-style: none; }
+    .blocked-list li { display: flex; align-items: center; justify-content: space-between; gap: 8px; color: var(--ink); font-size: 10px; }
+    .blocked-list button { padding: 4px 7px; border: 1px solid var(--line); border-radius: 3px; color: var(--clay); background: transparent; cursor: pointer; font: inherit; }
+    .policy { margin-top: 23px; padding: 17px 18px; border: 1px solid var(--line); border-radius: 6px; background: var(--paper-deep); }
+    .policy h3 { margin: 0 0 4px; font-family: var(--sans); font-size: 14px; font-weight: 700; }
+    .policy-intro { margin: 0 0 12px; color: var(--muted); font-size: 11px; }
+    .policy-row { display: flex; justify-content: space-between; gap: 15px; padding: 7px 0; border-top: 1px solid var(--line); font-size: 11px; }
+    .policy-row span:last-child { text-align: right; }
+    .policy-note { margin: 11px 0 0; color: var(--muted); font-size: 10px; }
+    .summary { position: sticky; top: 18px; padding: 23px; border: 1px solid var(--line); border-radius: 8px; background: #fff; box-shadow: 0 8px 26px rgba(36,36,33,.05); }
+    .summary h2 { margin: 0 0 5px; font-size: 26px; }
+    .summary-caption { margin: 0 0 20px; color: var(--muted); font-size: 12px; }
+    .summary-selection { padding: 12px 0; border-block: 1px solid var(--line); }
+    .summary-selection strong { display: block; font-size: 14px; }
+    .summary-selection span { display: block; margin-top: 3px; color: var(--muted); font-size: 12px; }
+    .summary-row { display: flex; justify-content: space-between; gap: 14px; padding: 9px 0; border-bottom: 1px solid var(--line); font-size: 12px; }
+    .summary-row span:first-child { color: var(--muted); }
+    .summary-row strong { text-align: right; }
+    .occupancy-breakdown { margin: -4px 0 4px; color: var(--muted); font-size: 10px; line-height: 1.45; }
+    .capacity-warning { margin: 8px 0 12px; padding: 10px 12px; border-left: 2px solid var(--clay); color: #7d3d29; background: rgba(164,93,61,.1); font-size: 11px; line-height: 1.45; }
+    .capacity-warning[hidden] { display: none; }
+    .summary-total { margin-top: 4px; padding: 13px 0 9px; border-bottom: 0; font-size: 15px; }
+    .payment-total { display: flex; justify-content: space-between; gap: 12px; margin-top: 4px; padding: 14px; border-radius: 4px; color: #fff; background: var(--pine); }
+    .payment-total span { font-size: 12px; }
+    .payment-total strong { font-size: 18px; white-space: nowrap; }
+    .remaining { margin: 10px 0 0; color: var(--muted); font-size: 11px; }
+    .tax-note { margin: 15px 0 0; padding-top: 13px; border-top: 1px solid var(--line); color: var(--muted); font-size: 11px; }
+    .tax-rate-note { margin: 9px 0 0; color: var(--muted); font-size: 10px; line-height: 1.5; }
+    .guest-card-note { margin-top: 14px; padding: 12px; border-left: 2px solid var(--brass); background: var(--paper); }
+    .guest-card-note p { margin: 0 0 5px; color: var(--ink); font-size: 11px; }
+    .guest-card-note a { color: var(--pine); font-size: 11px; font-weight: 700; text-decoration: underline; text-underline-offset: 2px; }
+    .summary .button { width: 100%; margin-top: 18px; }
+    .summary-small { margin: 10px 0 0; color: var(--muted); font-size: 10px; text-align: center; }
+    .form-result { margin-top: 14px; padding: 12px; border-left: 2px solid var(--clay); background: var(--paper); font-size: 12px; }
+    .form-result[hidden] { display: none; }
+    .email-link { display: flex; width: 100%; min-height: 42px; align-items: center; justify-content: center; margin-top: 10px; border-radius: 4px; color: #fff; background: var(--pine); font-size: 12px; font-weight: 700; }
+    .demo-footer { padding: 18px 6%; color: var(--muted); background: var(--paper-deep); font-size: 11px; text-align: center; }
+    @media (max-width: 760px) {
+      .demo-header { padding-inline: 5%; }
+      .booking-page { width: 90%; padding-top: 30px; }
+      .booking-layout { grid-template-columns: 1fr; }
+      .summary { position: static; grid-row: 1; }
+      .booking-steps span { gap: 6px; font-size: 10px; }
+      .booking-steps span + span { padding-left: 8px; }
+      .summary { padding: 19px; }
+    }
+    @media (max-width: 430px) {
+      .field-grid { grid-template-columns: 1fr; }
+      .field-grid.three { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+      .phone-fields { grid-template-columns: minmax(102px, .8fr) minmax(0, 1.2fr); gap: 7px; }
+      .booking-steps b { width: 23px; height: 23px; flex-basis: 23px; }
+      .booking-steps span { font-size: 9px; }
+      .policy-row { font-size: 10px; }
+    }
+  </style>
+</head>
+<body data-page-type="booking">
+  <div class="demo-banner" data-i18n="bookingBanner">BUCHUNGSANFRAGE · KEINE ONLINEZAHLUNG</div>
+  <header class="demo-header">
+    <a class="wordmark" href="index.html" aria-label="Zur Chalet Bellheim Website">
+      <span class="wordmark-icon" aria-hidden="true"><img src="Fotos/Bellheim-wappen.png" alt=""></span>
+      <span class="brand-name"><span class="brand-kicker">CHALET</span><strong>BELLHEIM</strong><span class="brand-location">Bellwald · Wallis</span></span>
+    </a>
+    <span class="demo-label" data-i18n="bookingHeaderLabel">Unverbindliche Buchungsanfrage</span>
+    <label class="language-picker"><span class="sr-only" data-i18n="languageLabel">Sprache wählen</span><select id="language-select" aria-label="Sprache"><option value="de">DE</option><option value="en">EN</option><option value="nl">NL</option></select></label>
+  </header>
+  <main class="booking-page">
+    <div class="page-heading">
+      <p class="eyebrow eyebrow-dark" data-i18n="bookingPageEyebrow">EURE AUSZEIT IN BELLWALD</p>
+      <h1 data-i18n="bookingPageHeading">Eure Bergzeit<br>beginnt hier.</h1>
+      <p data-i18n="bookingPageIntro">Wählt Wohnung und Reisedaten. Ihr seht den Gesamtpreis direkt. Die Anfrage bleibt unverbindlich; nach unserer Verfügbarkeitsprüfung und schriftlichen Buchungsbestätigung wird der Gesamtbetrag fällig.</p>
+    </div>
+    <div class="booking-steps" aria-label="Buchungsablauf" data-i18n-aria="bookingPageTitle">
+      <span><b>1</b> <span data-i18n="bookingStepStay">Aufenthalt</span></span><span><b>2</b> <span data-i18n="bookingStepPrice">Preisübersicht</span></span><span><b>3</b> <span data-i18n="bookingStepSend">Anfrage senden</span></span>
+    </div>
+    <div class="booking-layout">
+      <form class="booking-form" id="booking-form">
+        <section class="form-section">
+          <h2 data-i18n="bookingSectionStay">1. Aufenthalt</h2>
+          <p data-i18n="bookingStayIntro">Wählt eure Unterkunft und die gewünschte Reisezeit.</p>
+          <p class="required-note"><span data-i18n="bookingRequiredNote">Mit * gekennzeichnete Felder sind Pflichtfelder.</span></p>
+          <div class="field-grid">
+            <label><span><span data-i18n="apartmentLabel">Chalet oder Wohnung</span> <span class="required-mark" aria-hidden="true">*</span></span>
+              <select name="apartment" required>
+                <option value="Chalet Bellheim" data-i18n="bookingApartmentWhole">Bellheim · ganzes Chalet · max. 11 Personen</option>
+                <option value="Wiisshoru" data-i18n="bookingApartmentUpper">Wiisshoru · Obergeschoss · max. 7 Personen</option>
+                <option value="Schwarznasa" data-i18n="bookingApartmentLower">Schwarznasa · Erdgeschoss · max. 4 Personen</option>
+              </select>
+            </label>
+            <label><span data-i18n="bookingSeasonLabel">Tarifperiode</span>
+              <output id="season-display" aria-live="polite">Wird anhand des Aufenthalts berechnet</output>
+            </label>
+          </div>
+          <div class="season-note" data-i18n="bookingSeasonPeriods">Tarifzeiträume: Winter 15.12.–15.04. · Basiszeit 16.04.–14.06. und 01.11.–14.12. · Sommer 15.06.–31.08. · Herbst 01.09.–31.10. Der Wintertarif gilt auch an Weihnachten, Neujahr und während der Sportferien.</div>
+          <div class="field-grid" style="margin-top: 14px">
+            <label><span><span data-i18n="arrivalLabel">Anreise</span> <span class="required-mark" aria-hidden="true">*</span></span><input type="date" name="arrival" required></label>
+            <label><span><span data-i18n="departureLabel">Abreise</span> <span class="required-mark" aria-hidden="true">*</span></span><input type="date" name="departure" required></label>
+          </div>
+          <div class="availability-calendar" aria-labelledby="calendar-title">
+            <div class="calendar-heading">
+              <h3 id="calendar-title" data-i18n="bookingCalendar">Belegungsplan</h3>
+              <div class="calendar-nav"><button type="button" id="calendar-previous" data-i18n-aria="bookingPreviousMonth" aria-label="Vorheriger Monat">‹</button><button type="button" id="calendar-next" data-i18n-aria="bookingNextMonth" aria-label="Nächster Monat">›</button></div>
+            </div>
+            <p class="calendar-status" id="calendar-status" data-i18n="bookingCalendarStatus">Grün = im veröffentlichten Belegungsplan nicht blockiert, Rot = gebuchte Übernachtung. Jede Anfrage wird persönlich bestätigt.</p>
+            <div class="calendar-weekdays" aria-hidden="true"><span data-i18n="bookingMonday">Mo</span><span data-i18n="bookingTuesday">Di</span><span data-i18n="bookingWednesday">Mi</span><span data-i18n="bookingThursday">Do</span><span data-i18n="bookingFriday">Fr</span><span data-i18n="bookingSaturday">Sa</span><span data-i18n="bookingSunday">So</span></div>
+            <div class="calendar-grid" id="calendar-grid" role="group" aria-label="Termine auswählen" data-i18n-aria="bookingCalendarGroup"></div>
+            <div class="calendar-legend"><span><i class="legend-swatch legend-open"></i><span data-i18n="bookingLegendOpen">Im Plan nicht blockiert</span></span><span><i class="legend-swatch legend-booked"></i><span data-i18n="bookingLegendBooked">Gebuchte Übernachtung</span></span></div>
+          </div>
+          <p class="calendar-feedback" id="calendar-feedback" role="status" aria-live="polite"></p>
+          <span class="field-help" data-i18n="bookingMinimumStay">Mindestaufenthalt: 3 Nächte. Die Verfügbarkeit wird nach Eingang der Anfrage manuell geprüft.</span>
+        </section>
+        <section class="form-section">
+          <h2 data-i18n="bookingSectionGuests">2. Gäste & Kontakt</h2>
+          <p data-i18n="bookingSectionGuestsIntro">Damit wir eure Anfrage persönlich beantworten können.</p>
+          <div class="field-grid guest-counts">
+            <label><span><span data-i18n="adultCountLabel">Erwachsene</span> <span class="required-mark" aria-hidden="true">*</span></span><input type="number" name="adults" min="0" max="11" value="2" required></label>
+            <label><span><span data-i18n="bookingYouthLabel">Jugendliche · 6–15 Jahre</span> <span class="required-mark" aria-hidden="true">*</span></span><input type="number" name="youth" min="0" max="11" value="0" required></label>
+            <label><span><span data-i18n="bookingChildrenLabel">Kinder · unter 6 Jahre</span> <span class="required-mark" aria-hidden="true">*</span></span><input type="number" name="children" min="0" max="11" value="0" required></label>
+            <label><span><span data-i18n="dogCountLabel">Hunde</span> <span class="required-mark" aria-hidden="true">*</span></span><input type="number" name="dogs" min="0" value="0" required></label>
+          </div>
+          <div class="guest-name-fields" id="guest-name-fields" aria-live="polite"></div>
+          <div class="field-grid" style="margin-top: 14px">
+            <label><span><span data-i18n="guestEmailLabel">E-Mail-Adresse</span> <span class="required-mark" aria-hidden="true">*</span></span><input type="email" name="guestEmail" autocomplete="email" required></label>
+            <div class="phone-fields">
+              <label><span><span data-i18n="bookingPhonePrefix">Vorwahl</span> <span class="required-mark" aria-hidden="true">*</span></span><select name="phonePrefix" autocomplete="tel-country-code" required><option value="+41" selected>CH +41</option><option value="+49">DE +49</option><option value="+43">AT +43</option><option value="+33">FR +33</option><option value="+39">IT +39</option><option value="+31">NL +31</option><option value="+32">BE +32</option><option value="+352">LU +352</option><option value="+44">UK +44</option><option value="+1">US/CA +1</option></select></label>
+              <label><span><span data-i18n="bookingPhone">Telefonnummer</span> <span class="required-mark" aria-hidden="true">*</span></span><input type="tel" name="phoneNumber" autocomplete="tel-national" minlength="6" maxlength="20" inputmode="tel" required></label>
+            </div>
+          </div>
+          <div class="field-grid" style="margin-top: 14px">
+            <label><span><span data-i18n="bookingStreet">Strasse</span> <span class="required-mark" aria-hidden="true">*</span></span><input type="text" name="street" autocomplete="address-line1" required></label>
+            <label><span><span data-i18n="bookingHouse">Hausnummer</span> <span class="required-mark" aria-hidden="true">*</span></span><input type="text" name="houseNumber" autocomplete="address-line2" required></label>
+          </div>
+          <div class="field-grid" style="margin-top: 14px">
+            <label><span><span data-i18n="bookingPostalCode">PLZ</span> <span class="required-mark" aria-hidden="true">*</span></span><input type="text" name="postalCode" autocomplete="postal-code" required></label>
+            <label><span><span data-i18n="bookingCity">Ort</span> <span class="required-mark" aria-hidden="true">*</span></span><input type="text" name="city" autocomplete="address-level2" required></label>
+          </div>
+          <label style="margin-top: 14px"><span><span data-i18n="bookingCountry">Land</span> <span class="required-mark" aria-hidden="true">*</span></span>
+            <select name="country" autocomplete="country-name" required>
+              <option value="CH" data-i18n="bookingCountryCH" selected>Schweiz</option>
+              <option value="DE" data-i18n="bookingCountryDE">Deutschland</option>
+              <option value="AT" data-i18n="bookingCountryAT">Österreich</option>
+              <option value="FR" data-i18n="bookingCountryFR">Frankreich</option>
+              <option value="IT" data-i18n="bookingCountryIT">Italien</option>
+              <option value="NL" data-i18n="bookingCountryNL">Niederlande</option>
+              <option value="BE" data-i18n="bookingCountryBE">Belgien</option>
+              <option value="LU" data-i18n="bookingCountryLU">Luxemburg</option>
+              <option value="GB" data-i18n="bookingCountryGB">Vereinigtes Königreich</option>
+              <option value="US" data-i18n="bookingCountryUS">Vereinigte Staaten</option>
+              <option value="OTHER" data-i18n="bookingCountryOther">Anderes Land</option>
+            </select>
+          </label>
+          <label id="other-country-label" style="margin-top: 14px" hidden><span><span data-i18n="bookingOtherCountry">Land angeben</span> <span class="required-mark" aria-hidden="true">*</span></span><input type="text" name="otherCountry" autocomplete="country-name"></label>
+          <span class="field-help" data-i18n="bookingContactNote">Die Angaben werden in die Anfrage übernommen. Beim Absenden öffnet sich euer E-Mail-Programm; die Nachricht wird erst nach eurer Bestätigung versendet.</span>
+        </section>
+        <section class="form-section">
+          <h2 data-i18n="bookingCancellationSection">3. Stornierungsbedingungen · Vorschlag</h2>
+          <p class="field-help" data-i18n="bookingCancellationDisclaimer">Beispiel zur Abstimmung, noch keine bestätigten Vertragsbedingungen. Vor Veröffentlichung rechtlich prüfen lassen.</p>
+          <div class="policy">
+            <h3 data-i18n="bookingCancellationHeading">Faire Staffelung als Gesprächsgrundlage</h3>
+            <p class="policy-intro" data-i18n="bookingCancellationBefore">Frist jeweils vor dem Anreisedatum:</p>
+            <div class="policy-row"><span data-i18n="bookingCancel90">90 Tage oder früher</span><span data-i18n="bookingCancel90Fee">kostenfrei · 100% Rückerstattung</span></div>
+            <div class="policy-row"><span data-i18n="bookingCancel60">89 bis 60 Tage</span><span data-i18n="bookingCancel60Fee">50% Stornogebühr des Mietpreises</span></div>
+            <div class="policy-row"><span data-i18n="bookingCancel30">59 bis 30 Tage</span><span data-i18n="bookingCancel30Fee">75% Stornogebühr des Mietpreises</span></div>
+            <div class="policy-row"><span data-i18n="bookingCancelLate">29 Tage oder weniger / No-show</span><span data-i18n="bookingCancelLateFee">100% Stornogebühr des Mietpreises</span></div>
+            <p class="policy-note" data-i18n="bookingCancellationNote">Die Stornogebühr bezieht sich auf den bestätigten Mietpreis inklusive Endreinigung, aber ohne Kurtaxe. Bei einer Stornierung vor Anreise wird die vorausbezahlte Kurtaxe vollständig zurückerstattet. Diese Beispielstaffel muss vor Nutzung bestätigt und rechtlich geprüft werden.</p>
+          </div>
+        </section>
+      </form>
+      <aside class="summary" aria-labelledby="summary-title">
+        <h2 id="summary-title" data-i18n="bookingSummary">Preisübersicht</h2>
+        <p class="summary-caption" data-i18n="bookingEstimate">Unverbindlicher Richtpreis · CHF</p>
+        <div class="summary-selection"><strong id="summary-apartment">Bellheim · ganzes Chalet</strong><span id="summary-dates" data-i18n="bookingChooseDates">Reisedaten auswählen</span><span id="summary-season" data-i18n="bookingSeasonAuto">Tarifperiode wird automatisch bestimmt</span></div>
+        <div class="summary-row"><span data-i18n="bookingPeople">Personen</span><strong id="summary-person-count">2 / max. 11</strong></div>
+        <p class="occupancy-breakdown" id="summary-guest-breakdown">2 Erwachsene · 0 Jugendliche · 0 Kinder unter 6</p>
+        <div class="summary-row"><span data-i18n="bookingDogs">Hunde</span><strong id="summary-dog-count">0 Hunde</strong></div>
+        <p class="capacity-warning" id="capacity-warning" role="status" aria-live="polite" hidden></p>
+        <div class="summary-row"><span><span data-i18n="bookingNight">Übernachtung</span> · <span id="night-count">–</span></span><strong id="accommodation-price">CHF –</strong></div>
+        <p class="minimum-warning" id="minimum-stay-warning" role="status" hidden></p>
+        <div class="summary-row"><span data-i18n="bookingCleaning">Endreinigung</span><strong id="cleaning-price">CHF 350</strong></div>
+        <div class="summary-row"><span data-i18n="bookingRent">Mietpreis ohne Kurtaxe</span><strong id="total-price">CHF –</strong></div>
+        <div class="summary-row"><span data-i18n="bookingTaxStay">Kurtaxe · Aufenthalt</span><strong id="tourist-tax-price">CHF –</strong></div>
+        <p class="tax-rate-note" data-i18n="bookingTaxRates">Pro Nacht: Erwachsene CHF 5.80 · Jugendliche ab 6 bis 15 Jahre CHF 2.90 · Kinder unter 6 Jahre gratis.</p>
+        <div class="summary-row summary-total"><span data-i18n="bookingGrandTotal">Gesamt inkl. Kurtaxe</span><strong id="grand-total-price">CHF –</strong></div>
+        <div class="payment-total"><span><span data-i18n="bookingFullPayment">Gesamtzahlung · 100%</span><br><span data-i18n="bookingAfterConfirmation">nach schriftlicher Buchungsbestätigung</span></span><strong id="payment-total-price">CHF –</strong></div>
+        <p class="remaining" id="payment-note" data-i18n="bookingPaymentNote">Die unverbindliche Anfrage löst keine Zahlung aus. Der Gesamtbetrag wird erst nach schriftlicher Buchungsbestätigung fällig.</p>
+        <p class="tax-note" data-i18n="bookingUtilities">Strom und Wasser inklusive. Bettwäsche auf Wunsch.</p>
+        <div class="guest-card-note"><p data-i18n="bookingGuestCard">Als Übernachtungsgäste im Chalet Bellheim erhaltet ihr die Bellwald Gästekarte und profitiert von saisonalen Sommer- und Winterleistungen.</p><a href="https://www.bellwald.ch/planen-buchen/service-vorteile/gaestekarte-kurtaxe" target="_blank" rel="noreferrer"><span data-i18n="bookingGuestCardLink">Leistungen der Gästekarte ansehen</span> ↗</a></div>
+        <button class="button button-dark" type="submit" form="booking-form"><span data-i18n="bookingSubmit">Anfrage per E-Mail vorbereiten</span><span aria-hidden="true">↗</span></button>
+        <p class="summary-small" data-i18n="bookingNoAutomaticPayment">Keine automatische Buchungsbestätigung und keine Onlinezahlung. Wir prüfen Verfügbarkeit und Preis persönlich; die Zahlung wird erst nach unserer schriftlichen Bestätigung vereinbart.</p>
+        <div class="form-result" id="form-result" role="status" aria-live="polite" hidden></div>
+      </aside>
+    </div>
+  </main>
+  <footer class="demo-footer"><span data-i18n="bookingFooter">Unverbindliche Anfrage · Tarifzeiträume und Stornobedingungen vor einer Bestätigung prüfen.</span> · © <span id="year"></span> Chalet Bellheim</footer>
+  <script src="availability.js"></script>
+  <script src="app.js"></script>
+  <script>
+    const rates = {
+      "Chalet Bellheim": { base: { night: 380, week: 2500 }, summer: { night: 410, week: 2700 }, autumn: { night: 460, week: 3000 }, winter: { night: 520, week: 3400 }, cleaning: 350, capacity: 11 },
+      Wiisshoru: { base: { night: 200, week: 1350 }, summer: { night: 220, week: 1450 }, autumn: { night: 250, week: 1650 }, winter: { night: 280, week: 1850 }, cleaning: 200, capacity: 7 },
+      Schwarznasa: { base: { night: 180, week: 1150 }, summer: { night: 190, week: 1250 }, autumn: { night: 210, week: 1350 }, winter: { night: 240, week: 1550 }, cleaning: 150, capacity: 4 }
+    };
+    const languageLocales = { de: "de-CH", en: "en-GB", nl: "nl-NL" };
+    const bookingText = (key, values = {}) => {
+      const message = translations[languageSelect.value]?.[key] || translations.de[key] || key;
+      return message.replace(/\{(\w+)\}/g, (_, name) => values[name] ?? "");
+    };
+    const seasonKeys = { base: "baseSeason", summer: "summerSeason", autumn: "autumnSeason", winter: "winterSeason" };
+    const form = document.querySelector("#booking-form");
+    const result = document.querySelector("#form-result");
+    const guestNameFields = document.querySelector("#guest-name-fields");
+    const otherCountryLabel = document.querySelector("#other-country-label");
+    const calendarGrid = document.querySelector("#calendar-grid");
+    const calendarTitle = document.querySelector("#calendar-title");
+    const calendarFeedback = document.querySelector("#calendar-feedback");
+    const calendarStatus = document.querySelector("#calendar-status");
+    const minimumStayWarning = document.querySelector("#minimum-stay-warning");
+    const currency = new Intl.NumberFormat("de-CH", { style: "currency", currency: "CHF", maximumFractionDigits: 2 });
+    const today = new Date();
+    const localToday = new Date(today.getTime() - today.getTimezoneOffset() * 60000).toISOString().slice(0, 10);
+    let calendarMonth = new Date(Date.UTC(today.getFullYear(), today.getMonth(), 1));
+    const bookedRanges = window.BELLWALD_BOOKED_RANGES || {};
+    const requestedApartment = new URLSearchParams(window.location.search).get("apartment");
+    if (Object.hasOwn(rates, requestedApartment)) form.elements.apartment.value = requestedApartment;
+    form.elements.arrival.min = localToday;
+    form.elements.departure.min = localToday;
+
+    function seasonFor(date) {
+      const month = date.getUTCMonth() + 1;
+      const day = date.getUTCDate();
+      if (month === 12 && day >= 15 || month <= 3 || month === 4 && day <= 15) return "winter";
+      if (month === 4 && day >= 16 || month === 5 || month === 6 && day <= 14 || month === 11 || month === 12 && day <= 14) return "base";
+      if (month === 6 && day >= 15 || month === 7 || month === 8) return "summer";
+      return "autumn";
+    }
+
+    function formatPrice(value) {
+      return currency.format(value).replace("CHF ", "CHF ");
+    }
+
+    function formatStayDate(value) {
+      return new Intl.DateTimeFormat(languageLocales[languageSelect.value] || languageLocales.de, { dateStyle: "medium", timeZone: "UTC" }).format(new Date(`${value}T00:00:00Z`));
+    }
+
+    function renderGuestNameFields() {
+      const previousValues = new Map();
+      guestNameFields.querySelectorAll("input").forEach((input) => previousValues.set(input.name, input.value));
+      guestNameFields.replaceChildren();
+      const guestGroups = [
+        { type: "adult", title: bookingText("bookingAdultPerson"), count: Number(form.elements.adults.value) || 0 },
+        { type: "youth", title: bookingText("bookingYouthPerson"), count: Number(form.elements.youth.value) || 0 },
+        { type: "child", title: bookingText("bookingChildPerson"), count: Number(form.elements.children.value) || 0 }
+      ];
+      guestGroups.forEach((group) => {
+        for (let index = 1; index <= group.count; index += 1) {
+          const row = document.createElement("div");
+          row.className = "guest-name-row";
+          row.dataset.guestType = group.type;
+          row.dataset.guestNumber = String(index);
+          const heading = document.createElement("p");
+          heading.className = "guest-name-heading";
+          heading.textContent = `${group.title} ${index}`;
+          row.append(heading);
+          [[bookingText("bookingFirstName"), "first", "given-name"], [bookingText("bookingLastName"), "last", "family-name"]].forEach(([labelText, part, autocomplete]) => {
+            const label = document.createElement("label");
+            const labelTextElement = document.createElement("span");
+            labelTextElement.textContent = `${labelText} `;
+            const requiredMark = document.createElement("span");
+            requiredMark.className = "required-mark";
+            requiredMark.setAttribute("aria-hidden", "true");
+            requiredMark.textContent = "*";
+            labelTextElement.append(requiredMark);
+            const input = document.createElement("input");
+            input.type = "text";
+            input.name = `guest_${group.type}_${index}_${part}`;
+            input.autocomplete = autocomplete;
+            input.required = true;
+            input.dataset.guestPart = part;
+            input.value = previousValues.get(input.name) || "";
+            label.append(labelTextElement, input);
+            row.append(label);
+          });
+          guestNameFields.append(row);
+        }
+      });
+    }
+
+    function updateOtherCountryField() {
+      const isOtherCountry = form.elements.country.value === "OTHER";
+      otherCountryLabel.hidden = !isOtherCountry;
+      form.elements.otherCountry.required = isOtherCountry;
+    }
+
+    function isNightBooked(dateValue, apartment = form.elements.apartment.value) {
+      const sharedRanges = bookedRanges["Chalet Bellheim"] || [];
+      const ranges = apartment === "Chalet Bellheim"
+        ? Object.values(bookedRanges).flat()
+        : [...sharedRanges, ...(bookedRanges[apartment] || [])];
+      return ranges.some(([arrival, departure]) => dateValue >= arrival && dateValue < departure);
+    }
+
+    function hasBookedNight(arrivalValue, departureValue) {
+      const cursor = new Date(`${arrivalValue}T00:00:00Z`);
+      const departure = new Date(`${departureValue}T00:00:00Z`);
+      while (cursor < departure) {
+        if (isNightBooked(cursor.toISOString().slice(0, 10))) return true;
+        cursor.setUTCDate(cursor.getUTCDate() + 1);
+      }
+      return false;
+    }
+
+    function setDepartureMinimum(arrivalValue) {
+      const earliestDeparture = new Date(`${arrivalValue}T00:00:00Z`);
+      earliestDeparture.setUTCDate(earliestDeparture.getUTCDate() + 3);
+      form.elements.departure.min = earliestDeparture.toISOString().slice(0, 10);
+      if (form.elements.departure.value && form.elements.departure.value < form.elements.departure.min) form.elements.departure.value = "";
+    }
+
+    function renderCalendar() {
+      const year = calendarMonth.getUTCFullYear();
+      const month = calendarMonth.getUTCMonth();
+      const firstOfMonth = new Date(Date.UTC(year, month, 1));
+      const monthLength = new Date(Date.UTC(year, month + 1, 0)).getUTCDate();
+      const leadingDays = (firstOfMonth.getUTCDay() + 6) % 7;
+      const arrivalValue = form.elements.arrival.value;
+      const departureValue = form.elements.departure.value;
+      const locale = languageLocales[languageSelect.value] || languageLocales.de;
+      calendarTitle.textContent = new Intl.DateTimeFormat(locale, { month: "long", year: "numeric", timeZone: "UTC" }).format(firstOfMonth);
+      calendarGrid.replaceChildren();
+      for (let index = 0; index < leadingDays; index += 1) {
+        const blank = document.createElement("span");
+        blank.className = "calendar-empty";
+        blank.setAttribute("aria-hidden", "true");
+        calendarGrid.append(blank);
+      }
+      for (let day = 1; day <= monthLength; day += 1) {
+        const date = new Date(Date.UTC(year, month, day));
+        const dateValue = date.toISOString().slice(0, 10);
+        const button = document.createElement("button");
+        const isSelected = dateValue === arrivalValue || dateValue === departureValue;
+        const isInRange = arrivalValue && departureValue && dateValue > arrivalValue && dateValue < departureValue;
+        const isBooked = isNightBooked(dateValue);
+        const isPast = dateValue < localToday;
+        button.type = "button";
+        button.className = `calendar-day${!isPast && !isBooked ? " is-open" : ""}${isBooked ? " is-booked" : ""}${isSelected ? " is-selected" : ""}${isInRange ? " is-in-range" : ""}`;
+        button.dataset.date = dateValue;
+        button.textContent = String(day);
+        button.disabled = isPast;
+        button.setAttribute("aria-label", `${new Intl.DateTimeFormat(locale, { dateStyle: "full", timeZone: "UTC" }).format(date)} · ${bookingText(isBooked ? "bookingCalendarBookedDate" : "bookingCalendarOpenDate")}`);
+        button.setAttribute("aria-pressed", String(isSelected || Boolean(isInRange)));
+        button.addEventListener("click", () => {
+          const currentArrival = form.elements.arrival.value;
+          const currentDeparture = form.elements.departure.value;
+          calendarFeedback.textContent = "";
+          if (!currentArrival || currentDeparture || dateValue <= currentArrival) {
+            if (isBooked) {
+              calendarFeedback.textContent = bookingText("bookingCalendarArrivalBooked");
+              return;
+            }
+            form.elements.arrival.value = dateValue;
+            form.elements.departure.value = "";
+            setDepartureMinimum(dateValue);
+          } else {
+            const nights = Math.round((Date.parse(`${dateValue}T00:00:00Z`) - Date.parse(`${currentArrival}T00:00:00Z`)) / 86400000);
+            if (nights < 3) {
+              calendarFeedback.textContent = bookingText("bookingCalendarMinimumDate");
+              return;
+            }
+            if (hasBookedNight(currentArrival, dateValue)) {
+              calendarFeedback.textContent = bookingText("bookingCalendarConflictDate");
+              return;
+            }
+            form.elements.departure.value = dateValue;
+          }
+          calendarMonth = new Date(Date.UTC(year, month, 1));
+          updateSummary();
+          renderCalendar();
+        });
+        calendarGrid.append(button);
+      }
+    }
+
+    function getStayPrice(arrivalValue, nights, apartment) {
+      const nightlyGroups = [];
+      const cursor = new Date(`${arrivalValue}T00:00:00Z`);
+      for (let index = 0; index < nights; index += 1) {
+        const season = seasonFor(cursor);
+        const previousGroup = nightlyGroups[nightlyGroups.length - 1];
+        if (!previousGroup || previousGroup.season !== season) nightlyGroups.push({ season, nights: 0 });
+        nightlyGroups[nightlyGroups.length - 1].nights += 1;
+        cursor.setUTCDate(cursor.getUTCDate() + 1);
+      }
+      const accommodation = nightlyGroups.reduce((sum, group) => {
+        const rate = rates[apartment][group.season];
+        return sum + Math.floor(group.nights / 7) * rate.week + (group.nights % 7) * rate.night;
+      }, 0);
+      return { accommodation, nightlyGroups };
+    }
+
+    function updateSummary() {
+      const apartment = form.elements.apartment.value;
+      const selectedRate = rates[apartment];
+      const arrivalValue = form.elements.arrival.value;
+      const departureValue = form.elements.departure.value;
+      const nights = arrivalValue && departureValue ? Math.round((Date.parse(`${departureValue}T00:00:00Z`) - Date.parse(`${arrivalValue}T00:00:00Z`)) / 86400000) : 0;
+      const belowMinimum = nights > 0 && nights < 3;
+      const hasConflict = nights > 0 && hasBookedNight(arrivalValue, departureValue);
+      const adults = Number(form.elements.adults.value) || 0;
+      const youth = Number(form.elements.youth.value) || 0;
+      const children = Number(form.elements.children.value) || 0;
+      const dogs = Number(form.elements.dogs.value) || 0;
+      const guestCount = adults + youth + children;
+      const exceedsCapacity = guestCount > selectedRate.capacity;
+      const stay = nights > 0 ? getStayPrice(arrivalValue, nights, apartment) : { accommodation: 0, nightlyGroups: [] };
+      const total = nights >= 3 && !hasConflict ? stay.accommodation + selectedRate.cleaning : 0;
+      const touristTax = nights > 0 && !hasConflict ? nights * (adults * 5.8 + youth * 2.9) : 0;
+      const totalWithTax = total + touristTax;
+      const seasonText = stay.nightlyGroups.length ? [...new Set(stay.nightlyGroups.map((group) => bookingText(seasonKeys[group.season])))].join(" + ") : bookingText("bookingSeasonAuto");
+      const apartmentLabel = form.elements.apartment.selectedOptions[0].textContent.split(" · max.")[0];
+      document.querySelector("#summary-apartment").textContent = apartmentLabel;
+      document.querySelector("#summary-person-count").textContent = `${guestCount} / max. ${selectedRate.capacity}`;
+      document.querySelector("#summary-guest-breakdown").textContent = `${adults} ${bookingText(adults === 1 ? "bookingAdultPerson" : "bookingAdultsShort")} · ${youth} ${bookingText(youth === 1 ? "bookingYouthPerson" : "bookingYouthShort")} · ${children} ${bookingText(children === 1 ? "bookingChildPerson" : "bookingChildrenShort")}`;
+      document.querySelector("#summary-dog-count").textContent = `${dogs} ${bookingText(dogs === 1 ? "bookingDogOne" : "bookingDogsShort")}`;
+      const capacityWarning = document.querySelector("#capacity-warning");
+      capacityWarning.hidden = !exceedsCapacity;
+      capacityWarning.textContent = exceedsCapacity ? bookingText("bookingCapacityWarning", { apartment: apartmentLabel, capacity: selectedRate.capacity }) : "";
+      document.querySelector("#cleaning-price").textContent = formatPrice(selectedRate.cleaning);
+      const nightText = nights === 1 ? bookingText("bookingNightOne") : bookingText("bookingNightMany");
+      document.querySelector("#night-count").textContent = nights > 0 ? `${nights} ${nightText}` : `– ${bookingText("bookingNightMany")}`;
+      minimumStayWarning.hidden = !belowMinimum;
+      minimumStayWarning.textContent = belowMinimum ? bookingText("bookingMinimumWarning", { nights: `${nights} ${nightText}` }) : "";
+      document.querySelector("#summary-dates").textContent = arrivalValue && departureValue ? `${formatStayDate(arrivalValue)} – ${formatStayDate(departureValue)}` : bookingText("bookingChooseDates");
+      document.querySelector("#summary-season").textContent = seasonText;
+      document.querySelector("#season-display").textContent = seasonText;
+      document.querySelector("#accommodation-price").textContent = nights >= 3 && !hasConflict ? formatPrice(stay.accommodation) : "CHF –";
+      document.querySelector("#total-price").textContent = nights >= 3 && !hasConflict ? formatPrice(total) : "CHF –";
+      document.querySelector("#tourist-tax-price").textContent = nights >= 3 && !hasConflict ? formatPrice(touristTax) : "CHF –";
+      document.querySelector("#grand-total-price").textContent = nights >= 3 && !hasConflict ? formatPrice(totalWithTax) : "CHF –";
+      document.querySelector("#payment-total-price").textContent = nights >= 3 && !hasConflict ? formatPrice(totalWithTax) : "CHF –";
+      document.querySelector("#payment-note").textContent = hasConflict ? bookingText("bookingUnavailablePrice") : bookingText("bookingPaymentNote");
+      calendarFeedback.textContent = hasConflict ? bookingText("bookingConflictWarning") : belowMinimum ? bookingText("bookingMinimumWarning", { nights: `${nights} ${nightText}` }) : "";
+      return { apartment, selectedRate, nights, stay, total, touristTax, totalWithTax, hasConflict, guestCount, exceedsCapacity };
+    }
+
+    form.elements.arrival.addEventListener("change", () => {
+      if (form.elements.arrival.value) setDepartureMinimum(form.elements.arrival.value);
+      calendarMonth = form.elements.arrival.value ? new Date(`${form.elements.arrival.value}T00:00:00Z`) : calendarMonth;
+      calendarMonth.setUTCDate(1);
+      updateSummary();
+      renderCalendar();
+    });
+    form.elements.departure.addEventListener("change", () => { updateSummary(); renderCalendar(); });
+    form.elements.apartment.addEventListener("change", updateSummary);
+    ["adults", "youth", "children"].forEach((name) => form.elements[name].addEventListener("input", () => { renderGuestNameFields(); updateSummary(); }));
+    form.elements.country.addEventListener("change", updateOtherCountryField);
+    document.querySelector("#calendar-previous").addEventListener("click", () => {
+      calendarMonth.setUTCMonth(calendarMonth.getUTCMonth() - 1);
+      renderCalendar();
+    });
+    document.querySelector("#calendar-next").addEventListener("click", () => {
+      calendarMonth.setUTCMonth(calendarMonth.getUTCMonth() + 1);
+      renderCalendar();
+    });
+    form.addEventListener("input", () => { result.hidden = true; updateSummary(); });
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const formData = new FormData(form);
+      const { apartment, selectedRate, nights, stay, total, touristTax, totalWithTax, hasConflict, guestCount, exceedsCapacity } = updateSummary();
+      let message = "";
+      if (nights < 3) message = bookingText("bookingErrorMinimum");
+      else if (hasConflict) message = bookingText("bookingErrorConflict");
+      else if (guestCount < 1) message = bookingText("bookingErrorNoGuests");
+      else if (exceedsCapacity) message = bookingText("bookingErrorCapacity", { apartment: form.elements.apartment.selectedOptions[0].textContent.split(" · max.")[0], capacity: selectedRate.capacity });
+
+      result.replaceChildren(document.createTextNode(message || bookingText("bookingRequestReady")));
+      if (!message) {
+        const seasonNamesForEmail = { base: bookingText("baseSeason"), summer: bookingText("summerSeason"), autumn: bookingText("autumnSeason"), winter: bookingText("winterSeason") };
+        const guestDetails = [...guestNameFields.querySelectorAll(".guest-name-row")].map((row) => {
+          const guestType = bookingText(row.dataset.guestType === "child" ? "bookingChildPerson" : row.dataset.guestType === "youth" ? "bookingYouthPerson" : "bookingAdultPerson");
+          const firstName = row.querySelector('[data-guest-part="first"]').value.trim();
+          const lastName = row.querySelector('[data-guest-part="last"]').value.trim();
+          return `${guestType} ${row.dataset.guestNumber}: ${firstName} ${lastName}`;
+        });
+        const country = formData.get("country") === "OTHER" ? formData.get("otherCountry") : form.elements.country.selectedOptions[0].textContent;
+        const details = [
+          bookingText("bookingMailSubject"),
+          `${bookingText("bookingMailStay")}: ${apartment}`,
+          `${bookingText("bookingMailArrival")}: ${formData.get("arrival")}`,
+          `${bookingText("bookingMailDeparture")}: ${formData.get("departure")}`,
+          `${bookingText("bookingMailNights")}: ${nights}`,
+          `${bookingText("bookingMailSeasons")}: ${[...new Set(stay.nightlyGroups.map((group) => seasonNamesForEmail[group.season]))].join(", ")}`,
+          `${bookingText("bookingMailAdults")}: ${formData.get("adults")}`,
+          `${bookingText("bookingMailYouth")}: ${formData.get("youth")}`,
+          `${bookingText("bookingMailChildren")}: ${formData.get("children")}`,
+          `${bookingText("bookingMailDogs")}: ${formData.get("dogs")}`,
+          ...guestDetails,
+          `${bookingText("bookingMailEmail")}: ${formData.get("guestEmail")}`,
+          `${bookingText("bookingMailPhone")}: ${formData.get("phonePrefix")} ${formData.get("phoneNumber")}`,
+          `${bookingText("bookingMailAddress")}: ${formData.get("street")} ${formData.get("houseNumber")}, ${formData.get("postalCode")} ${formData.get("city")}, ${country}`,
+          "",
+          `${bookingText("bookingMailRent")}: ${formatPrice(total)}`,
+          `${bookingText("bookingMailCleaning")}: ${formatPrice(selectedRate.cleaning)}`,
+          `${bookingText("bookingMailTax")} (${nights} ${bookingText(nights === 1 ? "bookingNightOne" : "bookingNightMany")}): ${formatPrice(touristTax)}`,
+          `${bookingText("bookingMailGrandTotal")}: ${formatPrice(totalWithTax)}`,
+          `${bookingText("bookingMailFullPayment")}: ${formatPrice(totalWithTax)}`,
+          bookingText("bookingMailNote")
+        ].join("\n");
+        const emailLink = document.createElement("a");
+        emailLink.className = "email-link";
+        emailLink.href = `mailto:chalet.bellheim@gmail.com?${new URLSearchParams({ subject: bookingText("bookingMailSubject"), body: details })}`;
+        emailLink.textContent = bookingText("bookingEmailOpen");
+        result.append(emailLink);
+      }
+      result.hidden = false;
+    });
+    languageSelect.addEventListener("change", () => {
+      renderGuestNameFields();
+      updateSummary();
+      renderCalendar();
+    });
+    renderGuestNameFields();
+    updateOtherCountryField();
+    updateSummary();
+    renderCalendar();
+  </script>
+</body>
+</html>

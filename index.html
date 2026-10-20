@@ -211,22 +211,15 @@
         <div class="booking-heading"><div><p class="eyebrow eyebrow-dark" data-i18n="bookingEyebrow">DEINE AUSZEIT BEGINNT HIER</p><h2 data-i18n="bookingTitle">Wann soll’s<br>in die Berge gehen?</h2></div><img class="booking-emblem" src="Fotos/Bellheim-transparent.png" alt="" aria-hidden="true" loading="lazy"></div>
         <p data-i18n="bookingBody">Das ganze Bellheim oder eine der beiden Wohnungen? Wähle eure Auszeit und Reisedaten. Wir prüfen die Verfügbarkeit und melden uns persönlich zurück.</p>
         <p class="booking-contact"><span data-i18n="emailContactLabel">Schreib uns gerne</span><a href="mailto:chalet.bellheim@gmail.com">chalet.bellheim@gmail.com</a></p>
-        <p class="booking-note"><span class="status-dot"></span><span data-i18n="calendarStatus">Der Live-Belegungskalender wird noch eingerichtet. Verfügbarkeit aktuell auf Anfrage.</span></p>
+        <p class="booking-note"><span class="status-dot"></span><span data-i18n="calendarStatus">Der Belegungsplan zeigt veröffentlichte Buchungssperren. Verfügbarkeit bestätigen wir persönlich nach Eingang eurer Anfrage.</span></p>
       </div>
-      <form class="booking-form" id="booking-form">
-        <label><span data-i18n="apartmentLabel">Chalet oder Wohnung</span><select name="apartment" required><option value="Chalet Bellheim" data-i18n="bothApartments">Bellheim · das ganze Chalet</option><option value="Wiisshoru" data-i18n="upperOption">Wiisshoru · Obergeschoss</option><option value="Schwarznasa" data-i18n="lowerOption">Schwarznasa · Erdgeschoss</option></select></label>
-        <label><span data-i18n="guestNameLabel">Dein Name</span><input type="text" name="guestName" autocomplete="name" required></label>
-        <label><span data-i18n="guestEmailLabel">Deine E-Mail-Adresse</span><input type="email" name="guestEmail" autocomplete="email" required></label>
-        <div class="date-row"><label><span data-i18n="arrivalLabel">Anreise</span><input type="date" name="arrival" required></label><label><span data-i18n="departureLabel">Abreise</span><input type="date" name="departure" required></label></div>
-        <div class="guest-grid">
-          <label><span data-i18n="adultCountLabel">Erwachsene</span><input type="number" name="adults" min="0" max="11" value="2" required></label>
-          <label><span data-i18n="childCountLabel">Kinder</span><input type="number" name="children" min="0" max="11" value="0" required></label>
-          <label><span data-i18n="dogCountLabel">Hunde</span><input type="number" name="dogs" min="0" value="0" required></label>
-        </div>
-        <button class="button button-dark" type="submit"><span data-i18n="bookingButton">E-Mail-Anfrage vorbereiten</span><span aria-hidden="true">↗</span></button>
-        <p class="form-small" data-i18n="formNote">Dein E-Mail-Programm öffnet sich mit den Angaben; gesendet wird erst nach deiner Bestätigung.</p>
-        <div class="form-result" id="form-result" role="status" aria-live="polite" hidden></div>
-      </form>
+      <div class="booking-form booking-launch">
+        <p class="eyebrow eyebrow-dark" data-i18n="bookingLaunchEyebrow">BUCHUNGSANFRAGE</p>
+        <h3 data-i18n="bookingLaunchTitle">Wählt eure Auszeit.</h3>
+        <p data-i18n="bookingLaunchBody">Im nächsten Schritt wählt ihr Wohnung, Reisedaten und Gäste. Der Richtpreis wird direkt berechnet; eure Anfrage bleibt unverbindlich, bis wir Verfügbarkeit und Buchung schriftlich bestätigen.</p>
+        <a class="button button-dark booking-start" data-i18n-aria="bookingLaunchButton" href="buchungsablauf-vorschau.html"><span data-i18n="bookingLaunchButton">Buchungsanfrage starten</span><span aria-hidden="true">↗</span></a>
+        <p class="form-small" data-i18n="bookingLaunchNote">Keine Onlinezahlung. Wir prüfen jede Anfrage persönlich und melden uns per E-Mail.</p>
+      </div>
     </section>
   </main>
 
