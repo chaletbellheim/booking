@@ -330,7 +330,7 @@ Object.assign(translations.nl, { bookingPageEyebrow: "JULLIE UITSTAP IN BELLWALD
 
 const photoGalleryImages = {
   belalp: [
-    "Fotos/wiisshoru-holzschild.svg",
+    "Fotos/Gemini_Generated_Image_dnlngtdnlngtdnln.jpg",
     "Fotos/Belalp/1753685094-Agten-Immoblilien-Chalet-kaufen-Bellwald_(34).jpg-3000x2250.webp",
     "Fotos/Belalp/1753685054-Agten-Immoblilien-Chalet-kaufen-Bellwald_(2).jpg-3000x2250.webp",
     "Fotos/Belalp/1753685097-Agten-Immoblilien-Chalet-kaufen-Bellwald_(36).jpg-3000x2250.webp",
@@ -350,7 +350,7 @@ const photoGalleryImages = {
     "Fotos/Belalp/1753685058-Agten-Immoblilien-Chalet-kaufen-Bellwald_(7).jpg-3000x1686.webp"
   ],
   bailey: [
-    "Fotos/schwarznasa-holzschild.svg",
+    "Fotos/Gemini_Generated_Image_dnlngtdnlngtdnln.jpg",
     "Fotos/Bailey/1753685077-Agten-Immoblilien-Chalet-kaufen-Bellwald_(22).jpg-3000x2249.webp",
     "Fotos/Bailey/1753685080-Agten-Immoblilien-Chalet-kaufen-Bellwald_(24).jpg-3000x2250.webp",
     "Fotos/Bailey/1753685081-Agten-Immoblilien-Chalet-kaufen-Bellwald_(25).jpg-3000x2250.webp",
@@ -360,7 +360,7 @@ const photoGalleryImages = {
     "Fotos/Bailey/1753685086-Agten-Immoblilien-Chalet-kaufen-Bellwald_(28).jpg-3000x2250.webp"
   ],
   bellevue: [
-    "Fotos/bellheim-holzschild.svg",
+    "Fotos/Gemini_Generated_Image_fhmw5vfhmw5vfhmw.jpg",
     "Fotos/Bellevue/1753685063-Agten-Immoblilien-Chalet-kaufen-Bellwald_(11).jpg-3000x1686.webp",
     "Fotos/Bellevue/90fcaf7f060d2c3366dbe0bddf9438d8.jpg",
     "Fotos/Bellevue/1753685060-Agten-Immoblilien-Chalet-kaufen-Bellwald_(8).jpg-3000x1686.webp",
