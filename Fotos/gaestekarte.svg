@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="210" viewBox="0 0 320 210">
+  <title>Illustration einer Gästekarte für Bellwald</title>
+  <defs>
+    <linearGradient id="paper" x2="1" y2="1"><stop stop-color="#faf7ee"/><stop offset="1" stop-color="#ded8c9"/></linearGradient>
+    <clipPath id="card"><rect x="8" y="8" width="304" height="194" rx="17"/></clipPath>
+  </defs>
+  <g clip-path="url(#card)">
+    <rect x="8" y="8" width="304" height="194" rx="17" fill="url(#paper)"/>
+    <path d="m125 144 58-77 29 38 26-45 74 94v48H8v-36Z" fill="#d0d3c5"/>
+    <path d="m183 67-15 36 16-8 13 6m41-41-15 41 16-10 15 12" fill="#faf7ee"/>
+    <path d="m8 173 65-24 54 17 65-25 60 17 60-18v62H8Z" fill="#4d6652"/>
+    <g transform="translate(242 115)" stroke="#292d29" stroke-width="2.3" stroke-linejoin="round">
+      <path d="m-13 12-13-4 3 12 11-1m25-7 13-4-3 12-11-1" fill="#292d29"/>
+      <path d="M-14 9c-8-4-7-13 0-15 0-8 10-12 16-7 7-5 16 0 15 6 9 3 9 13 0 17" fill="#f5efde"/>
+      <path d="M-12 9q12-5 24 0L9 27q-9 13-18 0Z" fill="#292d29"/>
+      <path d="m-3 27 3 2 3-2" fill="none" stroke="#eee8db"/>
+    </g>
+    <g fill="#29392f" font-family="Arial, sans-serif">
+      <text x="28" y="42" font-size="12" letter-spacing="3">BELLWALD</text>
+      <text x="27" y="77" font-size="25" font-weight="700">GÄSTEKARTE</text>
+      <text x="28" y="101" font-size="11" letter-spacing="1">BERGZEIT. MEHR ERLEBEN.</text>
+    </g>
+    <text x="28" y="184" fill="#fff" font-family="Arial, sans-serif" font-size="10" letter-spacing="2">ILLUSTRATION · MUSTER</text>
+  </g>
+  <rect x="8" y="8" width="304" height="194" rx="17" fill="none" stroke="#fff" stroke-opacity=".6" stroke-width="2"/>
+</svg>
