@@ -434,11 +434,17 @@ document.querySelectorAll(".photo-gallery[data-gallery]").forEach((gallery) => {
   if (!images.length || !image || !counter || !previous || !next) return;
 
   const showImage = () => {
-    image.src = images[activeIndex];
-    const isCover = activeIndex === 0 && Boolean(gallery.dataset.coverAlt);
-    image.alt = isCover ? gallery.dataset.coverAlt : gallery.dataset.alt || "";
-    image.classList.toggle("gallery-cover", isCover);
-    counter.textContent = `${activeIndex + 1} / ${images.length}`;
+    const requestedIndex = activeIndex;
+    const nextImage = new Image();
+    nextImage.onload = () => {
+      if (requestedIndex !== activeIndex) return;
+      const isCover = requestedIndex === 0 && Boolean(gallery.dataset.coverAlt);
+      image.classList.toggle("gallery-cover", isCover);
+      image.src = nextImage.src;
+      image.alt = isCover ? gallery.dataset.coverAlt : gallery.dataset.alt || "";
+      counter.textContent = `${requestedIndex + 1} / ${images.length}`;
+    };
+    nextImage.src = images[requestedIndex];
     previous.hidden = images.length < 2;
     next.hidden = images.length < 2;
     counter.hidden = images.length < 2;
