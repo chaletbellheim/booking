@@ -361,16 +361,16 @@ const photoGalleryImages = {
   ],
   bellevue: [
     "Fotos/Gemini_Generated_Image_dnlngtdnlngtdnln.jpg",
-    "Fotos/Bellevue/1753685063-Agten-Immoblilien-Chalet-kaufen-Bellwald_(11).jpg-3000x1686.webp",
-    "Fotos/Bellevue/90fcaf7f060d2c3366dbe0bddf9438d8.jpg",
-    "Fotos/Bellevue/1753685060-Agten-Immoblilien-Chalet-kaufen-Bellwald_(8).jpg-3000x1686.webp",
-    "Fotos/Bellevue/1753685067-Agten-Immoblilien-Chalet-kaufen-Bellwald_(14).jpg-3000x1848.webp",
-    "Fotos/Bellevue/1753685070-Agten-Immoblilien-Chalet-kaufen-Bellwald_(16).jpg-3000x1763.webp",
-    "Fotos/Bellevue/1753685093-Agten-Immoblilien-Chalet-kaufen-Bellwald_(33).jpg-3000x2250.webp",
-    "Fotos/Bellevue/1753685058-Agten-Immoblilien-Chalet-kaufen-Bellwald_(7).jpg-3000x1686.webp",
-    "Fotos/Bellevue/1753685056-Agten-Immoblilien-Chalet-kaufen-Bellwald_(5).jpg-3000x1686.webp",
-    "Fotos/Bellevue/1770016584-Agten-Immobilien-Cahlet-kaufen-Bellwald_(2).jpg-3000x1687.webp",
-    "Fotos/Bellevue/1767630534-Agten-Immobilien-Chalet-kaufen-Bellwald-Goms-KI.png-1536x1024.webp"
+    "Fotos/Bellheim/1753685063-Agten-Immoblilien-Chalet-kaufen-Bellwald_(11).jpg-3000x1686.webp",
+    "Fotos/Bellheim/90fcaf7f060d2c3366dbe0bddf9438d8.jpg",
+    "Fotos/Bellheim/1753685060-Agten-Immoblilien-Chalet-kaufen-Bellwald_(8).jpg-3000x1686.webp",
+    "Fotos/Bellheim/1753685067-Agten-Immoblilien-Chalet-kaufen-Bellwald_(14).jpg-3000x1848.webp",
+    "Fotos/Bellheim/1753685070-Agten-Immoblilien-Chalet-kaufen-Bellwald_(16).jpg-3000x1763.webp",
+    "Fotos/Bellheim/1753685093-Agten-Immoblilien-Chalet-kaufen-Bellwald_(33).jpg-3000x2250.webp",
+    "Fotos/Bellheim/1753685058-Agten-Immoblilien-Chalet-kaufen-Bellwald_(7).jpg-3000x1686.webp",
+    "Fotos/Bellheim/1753685056-Agten-Immoblilien-Chalet-kaufen-Bellwald_(5).jpg-3000x1686.webp",
+    "Fotos/Bellheim/1770016584-Agten-Immobilien-Cahlet-kaufen-Bellwald_(2).jpg-3000x1687.webp",
+    "Fotos/Bellheim/1767630534-Agten-Immobilien-Chalet-kaufen-Bellwald-Goms-KI.png-1536x1024.webp"
   ],
   bellwaldSummer: [
     "Fotos/bellwald-sommer.svg",
@@ -380,8 +380,8 @@ const photoGalleryImages = {
   ],
   bellwaldWinter: [
     "Fotos/bellwald-winter.svg",
-    "Fotos/Bellevue/1770016584-Agten-Immobilien-Cahlet-kaufen-Bellwald_(2).jpg-3000x1687.webp",
-    "Fotos/Bellevue/1767630534-Agten-Immobilien-Chalet-kaufen-Bellwald-Goms-KI.png-1536x1024.webp"
+    "Fotos/Bellheim/1770016584-Agten-Immobilien-Cahlet-kaufen-Bellwald_(2).jpg-3000x1687.webp",
+    "Fotos/Bellheim/1767630534-Agten-Immobilien-Chalet-kaufen-Bellwald-Goms-KI.png-1536x1024.webp"
   ]
 };
 
