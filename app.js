@@ -423,12 +423,14 @@ setLanguage(languageSelect.value);
 languageSelect.addEventListener("change", () => setLanguage(languageSelect.value));
 document.querySelector("#year").textContent = new Date().getFullYear();
 
+const month = Number(new Intl.DateTimeFormat("en", { month: "numeric", timeZone: "Europe/Zurich" }).format(new Date()));
+const season = month <= 3 || month === 12 ? "winter" : month <= 7 ? "spring-summer" : "autumn";
+document.documentElement.dataset.season = season;
+
 const heroImage = document.querySelector(".hero-image");
 if (heroImage) {
-  const month = Number(new Intl.DateTimeFormat("en", { month: "numeric", timeZone: "Europe/Zurich" }).format(new Date()));
-  const season = month <= 3 || month === 12 ? "winter" : month <= 7 ? "springSummer" : "autumn";
   const seasonalHero = {
-    springSummer: { src: "Fotos/FrühlingSommer.jpg", alt: "Walliser Schwarznasenschaf vor grünen Alpen im Frühling und Sommer" },
+    "spring-summer": { src: "Fotos/FrühlingSommer.jpg", alt: "Walliser Schwarznasenschaf vor grünen Alpen im Frühling und Sommer" },
     autumn: { src: "Fotos/Herbst.jpg", alt: "Walliser Schwarznasenschaf vor goldenen Lärchen im Herbst" },
     winter: { src: "Fotos/Winter.jpg", alt: "Walliser Schwarznasenschaf im verschneiten Bellwald" }
   }[season];

@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=seasonal-theme-20261127">
   <style>
     body { background: var(--paper); }
     .demo-banner { padding: 9px 16px; color: #fff; background: var(--clay); font-size: 11px; font-weight: 700; text-align: center; }
@@ -39,7 +39,7 @@
     .guest-name-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; padding: 12px; border: 1px solid var(--line); border-radius: 4px; background: rgba(255,255,255,.55); }
     .guest-name-heading { grid-column: 1 / -1; margin: 0; color: var(--pine); font-size: 12px; font-weight: 700; }
     .booking-form label { display: grid; min-width: 0; gap: 6px; color: var(--ink); font-size: 12px; font-weight: 600; }
-    .booking-form input, .booking-form select { width: 100%; min-width: 0; min-height: 44px; padding: 9px 10px; border: 1px solid var(--line); border-radius: 3px; color: var(--ink); background: #fff; font: inherit; font-size: 14px; }
+    .booking-form input, .booking-form select { width: 100%; min-width: 0; min-height: 44px; padding: 9px 10px; border: 1px solid var(--line); border-radius: 3px; color: var(--ink); background: var(--paper); font: inherit; font-size: 14px; }
     .booking-form input:focus, .booking-form select:focus { outline: 2px solid var(--brass); outline-offset: 1px; }
     .required-mark { color: var(--clay); font-weight: 700; }
     .required-note { margin: -10px 0 0; color: var(--muted); font-size: 10px; }
@@ -76,7 +76,7 @@
     .calendar-admin > p { margin: 9px 0 12px; color: var(--muted); font-size: 10px; line-height: 1.45; }
     .calendar-admin-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; }
     .calendar-admin label { display: grid; gap: 5px; color: var(--muted); font-size: 10px; }
-    .calendar-admin input { width: 100%; min-width: 0; min-height: 38px; padding: 6px; border: 1px solid var(--line); border-radius: 3px; background: #fff; font: inherit; }
+    .calendar-admin input { width: 100%; min-width: 0; min-height: 38px; padding: 6px; border: 1px solid var(--line); border-radius: 3px; background: var(--paper); font: inherit; }
     .calendar-admin-action { width: 100%; min-height: 38px; margin-top: 9px; border: 1px solid var(--pine); border-radius: 3px; color: #fff; background: var(--pine); cursor: pointer; font: inherit; font-size: 11px; font-weight: 700; }
     .blocked-list { display: grid; gap: 6px; margin: 10px 0 0; padding: 0; list-style: none; }
     .blocked-list li { display: flex; align-items: center; justify-content: space-between; gap: 8px; color: var(--ink); font-size: 10px; }
@@ -87,7 +87,7 @@
     .policy-row { display: flex; justify-content: space-between; gap: 15px; padding: 7px 0; border-top: 1px solid var(--line); font-size: 11px; }
     .policy-row span:last-child { text-align: right; }
     .policy-note { margin: 11px 0 0; color: var(--muted); font-size: 10px; }
-    .summary { position: static; padding: 23px; border: 1px solid var(--line); border-radius: 8px; background: #fff; box-shadow: 0 8px 26px rgba(36,36,33,.05); }
+    .summary { position: static; padding: 23px; border: 1px solid var(--line); border-radius: 8px; background: var(--paper); box-shadow: 0 8px 26px rgba(36,36,33,.05); }
     .summary h2 { margin: 0 0 5px; font-size: 26px; }
     .summary-caption { margin: 0 0 20px; color: var(--muted); font-size: 12px; }
     .summary-selection { padding: 12px 0; border-block: 1px solid var(--line); }
@@ -272,7 +272,7 @@
   </main>
   <footer class="demo-footer"><span data-i18n="bookingFooter">Unverbindliche Anfrage · Tarifzeiträume und Stornobedingungen vor einer Bestätigung prüfen.</span> · © <span id="year"></span> Chalet Bellheim</footer>
   <script src="availability.js"></script>
-  <script src="app.js"></script>
+  <script src="app.js?v=seasonal-theme-20261127"></script>
   <script>
     const rates = {
       "Chalet Bellheim": { base: { night: 380, week: 2500 }, summer: { night: 410, week: 2700 }, autumn: { night: 460, week: 3000 }, winter: { night: 520, week: 3400 }, cleaning: 350, capacity: 11 },
