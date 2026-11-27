@@ -27,7 +27,7 @@
     .booking-steps b { display: grid; width: 26px; height: 26px; flex: 0 0 26px; place-items: center; border: 1px solid var(--line); border-radius: 50%; color: var(--pine); font-size: 11px; }
     .booking-steps span:first-child { color: var(--pine); font-weight: 700; }
     .booking-steps span:first-child b { border-color: var(--clay); color: #fff; background: var(--clay); }
-    .booking-layout { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(300px, .8fr); align-items: start; gap: clamp(26px, 5vw, 58px); }
+    .booking-layout { display: grid; grid-template-columns: minmax(0, 1fr); align-items: start; gap: 25px; }
     .booking-form { display: grid; gap: 25px; }
     .form-section { padding-bottom: 23px; border-bottom: 1px solid var(--line); }
     .form-section h2 { margin: 0 0 5px; font-family: var(--sans); font-size: 17px; font-weight: 700; }
@@ -87,7 +87,7 @@
     .policy-row { display: flex; justify-content: space-between; gap: 15px; padding: 7px 0; border-top: 1px solid var(--line); font-size: 11px; }
     .policy-row span:last-child { text-align: right; }
     .policy-note { margin: 11px 0 0; color: var(--muted); font-size: 10px; }
-    .summary { position: sticky; top: 18px; padding: 23px; border: 1px solid var(--line); border-radius: 8px; background: #fff; box-shadow: 0 8px 26px rgba(36,36,33,.05); }
+    .summary { position: static; padding: 23px; border: 1px solid var(--line); border-radius: 8px; background: #fff; box-shadow: 0 8px 26px rgba(36,36,33,.05); }
     .summary h2 { margin: 0 0 5px; font-size: 26px; }
     .summary-caption { margin: 0 0 20px; color: var(--muted); font-size: 12px; }
     .summary-selection { padding: 12px 0; border-block: 1px solid var(--line); }
@@ -119,7 +119,6 @@
       .demo-header { padding-inline: 5%; }
       .booking-page { width: 90%; padding-top: 30px; }
       .booking-layout { grid-template-columns: 1fr; }
-      .summary { position: static; grid-row: 1; }
       .booking-steps span { gap: 6px; font-size: 10px; }
       .booking-steps span + span { padding-left: 8px; }
       .summary { padding: 19px; }
@@ -189,6 +188,29 @@
           <p class="calendar-feedback" id="calendar-feedback" role="status" aria-live="polite"></p>
           <span class="field-help" data-i18n="bookingMinimumStay">Mindestaufenthalt: 3 Nächte. Die Verfügbarkeit wird nach Eingang der Anfrage manuell geprüft.</span>
         </section>
+        <aside class="summary" aria-labelledby="summary-title">
+          <h2 id="summary-title" data-i18n="bookingSummary">Preisübersicht</h2>
+          <p class="summary-caption" data-i18n="bookingEstimate">Unverbindlicher Richtpreis · CHF</p>
+          <div class="summary-selection"><strong id="summary-apartment">Bellheim · ganzes Chalet</strong><span id="summary-dates" data-i18n="bookingChooseDates">Reisedaten auswählen</span><span id="summary-season" data-i18n="bookingSeasonAuto">Tarifperiode wird automatisch bestimmt</span></div>
+          <div class="summary-row"><span data-i18n="bookingPeople">Personen</span><strong id="summary-person-count">2 / max. 11</strong></div>
+          <p class="occupancy-breakdown" id="summary-guest-breakdown">2 Erwachsene · 0 Jugendliche · 0 Kinder unter 6</p>
+          <div class="summary-row"><span data-i18n="bookingDogs">Hunde</span><strong id="summary-dog-count">0 Hunde</strong></div>
+          <p class="capacity-warning" id="capacity-warning" role="status" aria-live="polite" hidden></p>
+          <div class="summary-row"><span><span data-i18n="bookingNight">Übernachtung</span> · <span id="night-count">–</span></span><strong id="accommodation-price">CHF –</strong></div>
+          <p class="minimum-warning" id="minimum-stay-warning" role="status" hidden></p>
+          <div class="summary-row"><span data-i18n="bookingCleaning">Endreinigung</span><strong id="cleaning-price">CHF 350</strong></div>
+          <div class="summary-row"><span data-i18n="bookingRent">Mietpreis ohne Kurtaxe</span><strong id="total-price">CHF –</strong></div>
+          <div class="summary-row"><span data-i18n="bookingTaxStay">Kurtaxe · Aufenthalt</span><strong id="tourist-tax-price">CHF –</strong></div>
+          <p class="tax-rate-note" data-i18n="bookingTaxRates">Pro Nacht: Erwachsene CHF 5.80 · Jugendliche ab 6 bis 15 Jahre CHF 2.90 · Kinder unter 6 Jahre gratis.</p>
+          <div class="summary-row summary-total"><span data-i18n="bookingGrandTotal">Gesamt inkl. Kurtaxe</span><strong id="grand-total-price">CHF –</strong></div>
+          <div class="payment-total"><span><span data-i18n="bookingFullPayment">Gesamtzahlung · 100%</span><br><span data-i18n="bookingAfterConfirmation">nach schriftlicher Buchungsbestätigung</span></span><strong id="payment-total-price">CHF –</strong></div>
+          <p class="remaining" id="payment-note" data-i18n="bookingPaymentNote">Die unverbindliche Anfrage löst keine Zahlung aus. Der Gesamtbetrag wird erst nach schriftlicher Buchungsbestätigung fällig.</p>
+          <p class="tax-note" data-i18n="bookingUtilities">Strom und Wasser inklusive. Bettwäsche auf Wunsch.</p>
+          <div class="guest-card-note"><p data-i18n="bookingGuestCard">Als Übernachtungsgäste im Chalet Bellheim erhaltet ihr die Bellwald Gästekarte und profitiert von saisonalen Sommer- und Winterleistungen.</p><a href="https://www.bellwald.ch/planen-buchen/service-vorteile/gaestekarte-kurtaxe" target="_blank" rel="noreferrer"><span data-i18n="bookingGuestCardLink">Leistungen der Gästekarte ansehen</span> ↗</a></div>
+          <button class="button button-dark" type="submit" form="booking-form"><span data-i18n="bookingSubmit">Anfrage per E-Mail vorbereiten</span><span aria-hidden="true">↗</span></button>
+          <p class="summary-small" data-i18n="bookingNoAutomaticPayment">Keine automatische Buchungsbestätigung und keine Onlinezahlung. Wir prüfen Verfügbarkeit und Preis persönlich; die Zahlung wird erst nach unserer schriftlichen Bestätigung vereinbart.</p>
+          <div class="form-result" id="form-result" role="status" aria-live="polite" hidden></div>
+        </aside>
         <section class="form-section">
           <h2 data-i18n="bookingSectionGuests">2. Gäste & Kontakt</h2>
           <p data-i18n="bookingSectionGuestsIntro">Damit wir eure Anfrage persönlich beantworten können.</p>
@@ -246,29 +268,6 @@
           </div>
         </section>
       </form>
-      <aside class="summary" aria-labelledby="summary-title">
-        <h2 id="summary-title" data-i18n="bookingSummary">Preisübersicht</h2>
-        <p class="summary-caption" data-i18n="bookingEstimate">Unverbindlicher Richtpreis · CHF</p>
-        <div class="summary-selection"><strong id="summary-apartment">Bellheim · ganzes Chalet</strong><span id="summary-dates" data-i18n="bookingChooseDates">Reisedaten auswählen</span><span id="summary-season" data-i18n="bookingSeasonAuto">Tarifperiode wird automatisch bestimmt</span></div>
-        <div class="summary-row"><span data-i18n="bookingPeople">Personen</span><strong id="summary-person-count">2 / max. 11</strong></div>
-        <p class="occupancy-breakdown" id="summary-guest-breakdown">2 Erwachsene · 0 Jugendliche · 0 Kinder unter 6</p>
-        <div class="summary-row"><span data-i18n="bookingDogs">Hunde</span><strong id="summary-dog-count">0 Hunde</strong></div>
-        <p class="capacity-warning" id="capacity-warning" role="status" aria-live="polite" hidden></p>
-        <div class="summary-row"><span><span data-i18n="bookingNight">Übernachtung</span> · <span id="night-count">–</span></span><strong id="accommodation-price">CHF –</strong></div>
-        <p class="minimum-warning" id="minimum-stay-warning" role="status" hidden></p>
-        <div class="summary-row"><span data-i18n="bookingCleaning">Endreinigung</span><strong id="cleaning-price">CHF 350</strong></div>
-        <div class="summary-row"><span data-i18n="bookingRent">Mietpreis ohne Kurtaxe</span><strong id="total-price">CHF –</strong></div>
-        <div class="summary-row"><span data-i18n="bookingTaxStay">Kurtaxe · Aufenthalt</span><strong id="tourist-tax-price">CHF –</strong></div>
-        <p class="tax-rate-note" data-i18n="bookingTaxRates">Pro Nacht: Erwachsene CHF 5.80 · Jugendliche ab 6 bis 15 Jahre CHF 2.90 · Kinder unter 6 Jahre gratis.</p>
-        <div class="summary-row summary-total"><span data-i18n="bookingGrandTotal">Gesamt inkl. Kurtaxe</span><strong id="grand-total-price">CHF –</strong></div>
-        <div class="payment-total"><span><span data-i18n="bookingFullPayment">Gesamtzahlung · 100%</span><br><span data-i18n="bookingAfterConfirmation">nach schriftlicher Buchungsbestätigung</span></span><strong id="payment-total-price">CHF –</strong></div>
-        <p class="remaining" id="payment-note" data-i18n="bookingPaymentNote">Die unverbindliche Anfrage löst keine Zahlung aus. Der Gesamtbetrag wird erst nach schriftlicher Buchungsbestätigung fällig.</p>
-        <p class="tax-note" data-i18n="bookingUtilities">Strom und Wasser inklusive. Bettwäsche auf Wunsch.</p>
-        <div class="guest-card-note"><p data-i18n="bookingGuestCard">Als Übernachtungsgäste im Chalet Bellheim erhaltet ihr die Bellwald Gästekarte und profitiert von saisonalen Sommer- und Winterleistungen.</p><a href="https://www.bellwald.ch/planen-buchen/service-vorteile/gaestekarte-kurtaxe" target="_blank" rel="noreferrer"><span data-i18n="bookingGuestCardLink">Leistungen der Gästekarte ansehen</span> ↗</a></div>
-        <button class="button button-dark" type="submit" form="booking-form"><span data-i18n="bookingSubmit">Anfrage per E-Mail vorbereiten</span><span aria-hidden="true">↗</span></button>
-        <p class="summary-small" data-i18n="bookingNoAutomaticPayment">Keine automatische Buchungsbestätigung und keine Onlinezahlung. Wir prüfen Verfügbarkeit und Preis persönlich; die Zahlung wird erst nach unserer schriftlichen Bestätigung vereinbart.</p>
-        <div class="form-result" id="form-result" role="status" aria-live="polite" hidden></div>
-      </aside>
     </div>
   </main>
   <footer class="demo-footer"><span data-i18n="bookingFooter">Unverbindliche Anfrage · Tarifzeiträume und Stornobedingungen vor einer Bestätigung prüfen.</span> · © <span id="year"></span> Chalet Bellheim</footer>
